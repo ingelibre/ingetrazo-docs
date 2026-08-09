@@ -1,0 +1,3 @@
+# Versión FIJADA: builds reproducibles en Cloudflare Pages (misma lección
+# que ingepresupuestos-docs: sin pin, el build remoto se rompía).
+mkdocs-material==9.7.6

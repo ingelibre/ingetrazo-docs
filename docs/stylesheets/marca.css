@@ -1,0 +1,62 @@
+/* Paleta de marca IngeTrazo (Blueberry) sobre Material for MkDocs */
+:root {
+  --md-primary-fg-color:        #3689E6;
+  --md-primary-fg-color--light: #64A6EF;
+  --md-primary-fg-color--dark:  #0D52BF;
+  --md-accent-fg-color:         #0D52BF;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #ffffffb3;
+}
+
+/* Modo oscuro: azul como acento, fondo slate */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:  #3689E6;
+  --md-accent-fg-color:   #64A6EF;
+  --md-hue: 215;
+}
+
+/* Enlaces del contenido en arándano oscuro (consistente con la app) */
+.md-typeset a {
+  color: #0D52BF;
+}
+.md-typeset a:hover {
+  color: #3689E6;
+}
+
+/* Títulos un poco más marcados */
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* Capturas con borde y sombra suave */
+.md-typeset img {
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(15, 23, 32, 0.10);
+  border: 1px solid #e2e8f0;
+}
+
+/* Barra superior: volver al sitio principal (azul de marca) */
+.md-banner {
+  background-color: #3689E6;
+  color: #ffffff;
+}
+.md-banner__inner {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.ingep-back,
+.ingep-back:hover {
+  color: #ffffff !important;
+}
+.ingep-back {
+  font-weight: 600;
+  text-decoration: none;
+}
+.ingep-back:hover {
+  text-decoration: underline;
+}
+.ingep-back strong {
+  font-weight: 800;
+}
