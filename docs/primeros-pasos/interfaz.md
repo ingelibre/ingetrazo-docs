@@ -7,6 +7,9 @@ La ventana de IngeTrazo tiene cuatro zonas:
 - **Bandeja lateral** (derecha): materiales, capas, escenas, información de entidad, BIM y Terreno. Se pliega por paneles.
 - **Barra de estado** (abajo): mensajes de la herramienta activa, el **VCB** (campo de medidas) y — si el proyecto está georreferenciado — la lectura continua de coordenadas UTM.
 
+![La ventana completa: viewport con un modelo en curso y la bandeja lateral con Capas, Escenas y Materiales.](../images/principal.jpeg)
+
+
 ## Navegar el modelo
 
 | Acción | Cómo |

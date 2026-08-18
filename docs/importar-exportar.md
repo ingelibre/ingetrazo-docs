@@ -6,6 +6,9 @@ Abierto y documentado. Sin texturas es JSON legible; con texturas se vuelve un c
 
 ## Importar SketchUp (`.skp`) — nativo
 
+![Un `.skp` recién abierto: la geometría, los materiales y las capas originales de SketchUp llegan intactos.](images/import-sketchup.jpeg)
+
+
 Archivo ▸ Importar ▸ SketchUp, o **doble clic** al archivo, o arrástralo a la ventana.
 
 El importador es **propio y de código abierto** (proyecto [OpenSKP](https://github.com/iamahsanmehmood/openskp), al que IngeTrazo contribuye): lee el `.skp` directamente, **sin conversores ni SketchUp instalado**, en todas sus eras — desde los formatos antiguos (2013–2020) hasta los actuales.

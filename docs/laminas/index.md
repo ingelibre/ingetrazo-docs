@@ -4,6 +4,9 @@ El **compositor de láminas** convierte tu modelo en planos impresos sin salir d
 
 Se abre desde **Archivo ▸ Compositor de láminas**.
 
+![Una lámina A3 exportada por IngeTrazo: planta y elevaciones a 1:100, cajetín y escala gráfica.](../images/laminas.jpeg)
+
+
 ## La ventana
 
 - **Canvas central**: la hoja, con sombra y márgenes. Zoom con `Ctrl+rueda` o con el combo de la barra de estado (*Ajustar a hoja*, *Ajustar a anchura*, porcentajes — 100 % es el **tamaño real del papel** en tu pantalla).

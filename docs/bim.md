@@ -2,6 +2,9 @@
 
 El BIM de IngeTrazo no es una jaula de familias: **modelas libre y etiquetas**. La etiqueta es metadato sobre la geometría seleccionada — lo etiquetado entra al metrado y al IFC; lo demás es dibujo.
 
+![Una nave industrial con el panel BIM abierto: las columnas seleccionadas se etiquetan como IfcColumn.](images/bim.jpeg)
+
+
 ## Etiquetar
 
 En el panel **BIM** de la bandeja:

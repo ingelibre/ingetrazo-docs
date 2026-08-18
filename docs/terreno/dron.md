@@ -2,6 +2,9 @@
 
 Si vuelas tu sitio con dron y procesas en **WebODM/ODM**, IngeTrazo importa la malla fotogramétrica texturizada como base de trabajo — tu terreno real, con sus texturas reales, en su posición UTM real.
 
+![Un levantamiento real: ruta trazada sobre la malla del dron, perfil longitudinal abierto y lectura UTM en la barra de estado.](../images/terreno.jpeg)
+
+
 ## Importar
 
 1. Archivo ▸ Importar ▸ **Levantamiento fotogramétrico (ODM)…**

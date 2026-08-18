@@ -4,6 +4,9 @@
 
 **`U`** — la herramienta que convierte dibujos en volúmenes. Clic sobre una cara, mueve, teclea la distancia y Enter.
 
+![Empujar/Tirar en acción: la caseta toma volumen y el VCB (abajo a la derecha) recibe la distancia exacta.](../images/modelado.jpeg)
+
+
 - Sobre una cara de un sólido: lo **engrosa o adelgaza**.
 - Sobre un dibujo dentro de una cara: **abre un vano** al llegar a la cara opuesta.
 - IngeTrazo verifica cada empuje: si la operación fuera a dejar un sólido roto, la **rechaza** con un aviso — nunca corrompe el modelo.
