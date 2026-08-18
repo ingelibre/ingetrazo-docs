@@ -47,14 +47,14 @@ Lo importante, aunque nunca escribas código:
 - Los cambios marcan el documento como **modificado** — al cerrar sin guardar,
   IngeTrazo te avisa, como siempre.
 
-![La consola: un script falló y el documento quedó intacto](images/extensiones-consola-python.png)
-
 ¿Quieres verla en acción sin escribir una línea? Botón **"Ejecutar
 archivo…"** y elige `scripts/create_architectural_showcase.py` (viene con el
 programa): construye un pequeño pabellón con losa, columnas, muros y cubierta,
 **etiquetado BIM completo** — y un solo `Ctrl+Z` lo deshace. El botón
 **"Ayuda de API"** muestra los objetos disponibles y fragmentos de código para
 empezar.
+
+![El pabellón del script de ejemplo, recién construido desde la consola](images/extensiones-consola-pabellon.png)
 
 ## Instalar una extensión de terceros
 
