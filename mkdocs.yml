@@ -83,6 +83,7 @@ nav:
       - Marcos de vista y escala: laminas/marcos.md
       - Cotas, formas y cajetín: laminas/anotacion.md
       - Exportar PDF y DXF: laminas/exportar.md
+  - Extensiones: extensiones.md
   - Atajos de teclado: atajos.md
   - Preguntas frecuentes: faq.md
   - Licencia: licencia.md
