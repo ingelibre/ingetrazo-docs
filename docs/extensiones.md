@@ -4,7 +4,9 @@ Desde la versión **0.3.2**, IngeTrazo se puede ampliar con **plugins**: pequeñ
 programas que agregan herramientas nuevas sin tocar la aplicación. Todo vive en
 el menú **Extensiones** de la barra superior.
 
-Dos extensiones vienen incluidas: **Info del modelo** y la **Consola Python**.
+Varias extensiones vienen incluidas: **Info del modelo**, la **Consola
+Python**, el **Inspector de sólidos** y — desde la versión 0.3.5 — el
+**Asistente IA** y el **Puente IA (MCP)**.
 
 ## Info del modelo
 
@@ -56,9 +58,50 @@ empezar.
 
 ![El pabellón del script de ejemplo, recién construido desde la consola](images/extensiones-consola-pabellon.png)
 
+## Inspector de sólidos
+
+**Extensiones ▸ Inspector de sólidos** diagnostica por qué un grupo no es un
+sólido hermético (imprimible en 3D, medible en volumen): lista cada arista
+problemática — bordes abiertos, aristas con más de dos caras — y las resalta
+en el viewport para que las encuentres de un vistazo.
+
+## Asistente IA
+
+!!! info "Desde la versión 0.3.5"
+
+**Extensiones ▸ Asistente IA** (`Ctrl+Shift+A`) abre un chat donde **describes
+lo que quieres y la IA lo modela** en el documento abierto: *"dibuja una
+piscina de 4×2 m con 1.5 m de profundidad"*. Cada acción de la IA es **un solo
+paso de deshacer**, y si su código falla el documento se revierte entero — las
+mismas garantías de la Consola Python.
+
+Funciona con la convención de [IngePresupuestos](https://ingepresupuestos.com)
+que quizá ya conoces:
+
+- Elige un **proveedor** — Groq (gratis), Anthropic (Claude), OpenAI, Google
+  Gemini, OpenRouter, DeepSeek u **Ollama local** (sin clave, sin internet) —
+  o deja "Auto" y el prefijo de la clave lo detecta solo.
+- El enlace bajo el campo te lleva a **obtener la clave** de cada proveedor.
+  Cada proveedor **recuerda su propia clave y su modelo**: si se te acaban los
+  tokens de uno, cambias de proveedor en dos clics.
+- **Modelos** lista los modelos que tu clave realmente puede usar, y
+  **Probar conexión** valida la clave antes de empezar.
+- Con proveedores que "ven" (Claude, GPT, Gemini), el asistente recibe
+  **capturas del viewport** después de cada paso: mira lo que construyó y lo
+  corrige solo.
+
+## Puente IA (MCP)
+
+**Extensiones ▸ Puente IA (MCP)** es la otra vía: en lugar de chatear dentro
+de IngeTrazo, un agente externo (Claude Code, Claude Desktop) dirige el modelo
+mediante el [Model Context Protocol](https://modelcontextprotocol.io), con las
+mismas garantías transaccionales. La guía de conexión está en el repositorio:
+[`docs/ai-bridge.md`](https://github.com/ingelibre/ingetrazo/blob/main/docs/ai-bridge.md).
+
 ## Instalar una extensión de terceros
 
-Una extensión es un archivo `.py`. Cópialo a tu carpeta personal de plugins y
+Una extensión es un archivo `.py`. Cópialo a tu carpeta personal de plugins
+(**Extensiones ▸ Abrir carpeta de complementos** la crea y la abre por ti) y
 reinicia IngeTrazo:
 
 === "Linux"
@@ -87,10 +130,16 @@ para reportárselo al autor. Para desinstalar, borra el archivo.
 ## Escribir tu propia extensión
 
 Si programas en Python, la guía para desarrolladores (en inglés) está en el
-repositorio:
+repositorio — **Extensiones ▸ Desarrollar un complemento…** la abre directo:
 [`docs/plugins.md`](https://github.com/ingelibre/ingetrazo/blob/main/docs/plugins.md)
 — el ejemplo mínimo son ~10 líneas, y la Consola Python es el banco de pruebas
 natural: lo que funciona en la consola, funciona en un plugin.
+
+El código de todas las extensiones incluidas es libre (GPL-3.0) y está en la
+carpeta [`plugins/`](https://github.com/ingelibre/ingetrazo/tree/main/plugins)
+del repositorio — el propio Asistente IA es un plugin y sirve de ejemplo
+completo. Las contribuciones son bienvenidas: el motor de extensiones mismo
+nació de aportes de la comunidad.
 
 !!! note "La API aún no es estable"
     Durante la serie 0.x el sistema de plugins puede cambiar entre versiones.
