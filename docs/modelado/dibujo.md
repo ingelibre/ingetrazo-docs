@@ -28,6 +28,14 @@ Todas comparten el mismo lenguaje: clic para empezar, las **inferencias** te eng
 | **Sígueme (Follow me)** | `W` | Extruye un perfil a lo largo de un camino: molduras, tuberías, sardineles. |
 | **Texto 3D** | — | Dibujo ▸ Texto 3D: letras con volumen real, listas para extruir o pintar. |
 
+### Sígueme, tres maneras
+
+Como en SketchUp, dibuja el perfil **perpendicular al camino** (lo más fácil: sobre una cara, y borra las aristas que sobren).
+
+1. **Arrastrar por el camino** — activa Sígueme (`W`), haz clic en el perfil y mueve el cursor por el camino tocando sus aristas: el camino se resalta en **rojo** y la extrusión se previsualiza en vivo, con sus ingletes. Clic (o soltar el botón, si arrastraste) al llegar al final; `Esc` empieza de nuevo. Si te saltas tramos de un arco, se siguen las aristas conectadas que hay en medio; si retrocedes, el camino se acorta.
+2. **Camino preseleccionado** — selecciona las aristas del camino (un clic en un segmento de círculo toma todo el contorno), activa Sígueme y haz clic en el perfil: se extruye de una vez.
+3. **Perímetro de una cara** — selecciona la cara cuyo borde es el camino y haz clic en el perfil; o, mientras arrastras, mantén `Alt` sobre una cara para usar su perímetro. Es el atajo para molduras alrededor de una losa y para **tornear**: un círculo como camino y medio perfil como sección.
+
 ## El plano de trabajo
 
 Las herramientas dibujan sobre el **plano que estás mirando**: en vista superior dibujas en planta; si empiezas sobre una cara existente, dibujas sobre esa cara. El primer punto sin inferencia queda en el plano de la vista actual — así el trazo nunca "se escapa" a una profundidad inesperada.
