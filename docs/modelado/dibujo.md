@@ -48,10 +48,13 @@ Los números sin sufijo son **metros**. Cada campo puede llevar su propia unidad
 | `1'` · `1ft` | 1 pie |
 | `1'6"` | 1 pie 6 pulgadas |
 | `3/4"` · `1'3/4"` | fracciones de pulgada |
+| `1 1/2"` · `1-1/2"` · `1'6 1/2"` | pulgada y media, pie y seis y media (número mixto, como en SketchUp) |
 | `2";4"` | rectángulo de 2 × 4 pulgadas |
 | `3,2;1'6";10cm` | desplazamiento X, Y, Z con unidades mezcladas |
 
-Las comillas y la barra de fracción solo se aceptan después de un número, así que `I` y `F` siguen siendo atajos de herramienta. Las cotas del modelo pueden mostrarse en `in`, `ft` o `ft-in` desde el estilo de cotas de la bandeja.
+Las comillas y la barra de fracción solo se aceptan después de un número, así que `I` y `F` siguen siendo atajos de herramienta.
+
+**Acotar en pulgadas o pies.** En el estilo de cotas de la bandeja (y en cada cota de lámina, en su panel) elige las unidades: `m`, `cm`, `mm`, `in`, `ft`, `ft-in`, o las fraccionarias `in-frac` (`1 1/2"`) y `ft-in-frac` (`1'6 1/2"`). En las fraccionarias, **Decimales** fija el denominador más fino: 0 = pulgadas enteras, 1 = 1/4, 2 = 1/16, 3 = 1/32, 4 = 1/64.
 
 ## El plano de trabajo
 
