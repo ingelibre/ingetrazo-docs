@@ -36,6 +36,23 @@ Como en SketchUp, dibuja el perfil **perpendicular al camino** (lo más fácil: 
 2. **Camino preseleccionado** — selecciona las aristas del camino (un clic en un segmento de círculo toma todo el contorno), activa Sígueme y haz clic en el perfil: se extruye de una vez.
 3. **Perímetro de una cara** — selecciona la cara cuyo borde es el camino y haz clic en el perfil; o, mientras arrastras, mantén `Alt` sobre una cara para usar su perímetro. Es el atajo para molduras alrededor de una losa y para **tornear**: un círculo como camino y medio perfil como sección.
 
+## Medidas por teclado: metros, centímetros, pulgadas, pies
+
+Los números sin sufijo son **metros**. Cada campo puede llevar su propia unidad, así que puedes dibujar la madera o la tubería en pulgadas y las luces en metros dentro del mismo modelo:
+
+| Escribes | Vale |
+|---|---|
+| `3,2` | 3,20 m |
+| `30cm` · `1500mm` | 0,30 m · 1,50 m |
+| `2"` · `2in` | 2 pulgadas |
+| `1'` · `1ft` | 1 pie |
+| `1'6"` | 1 pie 6 pulgadas |
+| `3/4"` · `1'3/4"` | fracciones de pulgada |
+| `2";4"` | rectángulo de 2 × 4 pulgadas |
+| `3,2;1'6";10cm` | desplazamiento X, Y, Z con unidades mezcladas |
+
+Las comillas y la barra de fracción solo se aceptan después de un número, así que `I` y `F` siguen siendo atajos de herramienta. Las cotas del modelo pueden mostrarse en `in`, `ft` o `ft-in` desde el estilo de cotas de la bandeja.
+
 ## El plano de trabajo
 
 Las herramientas dibujan sobre el **plano que estás mirando**: en vista superior dibujas en planta; si empiezas sobre una cara existente, dibujas sobre esa cara. El primer punto sin inferencia queda en el plano de la vista actual — así el trazo nunca "se escapa" a una profundidad inesperada.
