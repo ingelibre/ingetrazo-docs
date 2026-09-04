@@ -29,3 +29,12 @@ El panel **Info** muestra y edita lo esencial de la selección: longitud de una 
 - **Culling de caras**: los dorsos se pintan azul grisáceo para detectar caras volteadas de un vistazo.
 - **Sombras y transparencias** se renderizan en el viewport tal como saldrán en el export de imagen.
 - Vista ▸ **Exportar imagen** guarda una captura de alta resolución del viewport.
+
+## Componentes: editas uno, cambian todos
+
+Las copias de un componente (Ctrl+C / Ctrl+V, o Mover con Ctrl) comparten una misma definición. Como en SketchUp:
+
+- **Doble clic en cualquier copia** la abre para editar. Dibuja, empuja, borra dentro; al salir (Esc o clic afuera), el cambio pasa a **todas** las copias. Toda la edición se deshace en un solo paso de Ctrl+Z.
+- **Empujar/Tirar sobre una copia desde fuera** también edita la definición: las demás copias reciben el mismo empuje.
+- **Para cambiar una sola copia**, antes de editarla usa clic derecho ▸ **Hacer único**: esa copia se desliga y las demás siguen compartiendo la definición.
+- Mirar dentro de un componente y salir sin tocar nada no cambia nada.
