@@ -10,7 +10,7 @@ Se abre desde **Archivo ▸ Compositor de láminas**.
 ## La ventana
 
 - **Canvas central**: la hoja, con sombra y márgenes. Zoom con `Ctrl+rueda` o con el combo de la barra de estado (*Ajustar a hoja*, *Ajustar a anchura*, porcentajes — 100 % es el **tamaño real del papel** en tu pantalla).
-- **Barra de herramientas izquierda**: seleccionar, marco de vista, texto, imagen, cajetín, escala gráfica, norte, leyenda, línea, flecha, rectángulo, elipse, polígono y cota.
+- **Barra de herramientas izquierda**: seleccionar, mano, pincel de formato, marco de vista, texto, etiqueta con guía, nivel, llamada de detalle, imagen, cajetín, escala gráfica, norte, leyenda, perfil de terreno, línea, flecha, rectángulo, elipse, polígono, cota, cotas en cadena y cota angular.
 - **Panel derecho** (redimensionable): gestor de láminas, lista de items y propiedades del item seleccionado.
 
 ## Hojas
@@ -27,5 +27,6 @@ Con **clic derecho** sobre cualquier item:
 
 - **Traer al frente / Subir / Bajar / Enviar al fondo** — el orden de apilado (dibuja un rectángulo de fondo, mándalo atrás, y pon todo encima).
 - **Bloquear** — el item queda visible pero inamovible (perfecto para el marco de la hoja); el candado 🔒 lo marca en la lista.
+- **Organizar** — alinear y distribuir la selección (con dos o más items), agrupar y desagrupar (`Ctrl+G`, `Ctrl+Mayús+G`), duplicar (`Ctrl+D`). La barra «Organizar» con estos mismos botones está oculta por defecto; clic derecho sobre la barra de herramientas para mostrarla.
 
 Sigue con **[Marcos de vista y escala](marcos.md)** — el corazón del compositor.
