@@ -48,7 +48,7 @@ IngeTrazo tiene dos maneras de dejar que una inteligencia artificial modele por 
 
 ## El puente MCP, paso a paso
 
-![Claude Code en una terminal dibujando una mesa de comedor con cuatro sillas dentro de IngeTrazo, abierto al lado.](images/mcp-claude.jpeg)
+![Escritorio Ubuntu completo: Claude Code en la terminal, a la izquierda, lista las medidas de la mesa con cuatro sillas que acaba de dibujar por el puente; IngeTrazo, a la derecha, muestra el modelo y el diálogo Puente IA (MCP) con la línea de conexión.](images/mcp-claude.jpeg)
 
 El [Model Context Protocol](https://modelcontextprotocol.io) deja que un agente externo —Claude Code en la terminal o Claude Desktop— opere IngeTrazo **en vivo, con la app abierta**: dibuja, consulta y mira el modelo, y cada acción suya es un paso de deshacer.
 
