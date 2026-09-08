@@ -6,7 +6,7 @@ el menú **Extensiones** de la barra superior.
 
 Varias extensiones vienen incluidas: **Info del modelo**, la **Consola
 Python**, el **Inspector de sólidos** y — desde la versión 0.3.5 — el
-**Asistente IA** y el **Puente IA (MCP)**.
+**Asistente IA** y el **Puente IA (MCP)** ([Modelar con la IA](ia.md)).
 
 ## Info del modelo
 
@@ -65,38 +65,14 @@ sólido hermético (imprimible en 3D, medible en volumen): lista cada arista
 problemática — bordes abiertos, aristas con más de dos caras — y las resalta
 en el viewport para que las encuentres de un vistazo.
 
-## Asistente IA
+## Asistente IA y Puente IA (MCP)
 
-!!! info "Desde la versión 0.3.5"
+Las dos formas de **modelar con la IA** tienen su propia página: [Modelar con la IA](ia.md). En resumen:
 
-**Extensiones ▸ Asistente IA** (`Ctrl+Shift+A`) abre un chat donde **describes
-lo que quieres y la IA lo modela** en el documento abierto: *"dibuja una
-piscina de 4×2 m con 1.5 m de profundidad"*. Cada acción de la IA es **un solo
-paso de deshacer**, y si su código falla el documento se revierte entero — las
-mismas garantías de la Consola Python.
+- **Extensiones ▸ Asistente IA** (`Ctrl+Shift+A`): un chat dentro de IngeTrazo donde describes lo que quieres —o adjuntas una foto— con la clave del proveedor que elijas (Groq gratis, Gemini, OpenAI, Anthropic, OpenRouter, DeepSeek u Ollama local).
+- **Extensiones ▸ Puente IA (MCP)**: Claude Code o Claude Desktop dirigen la app abierta mediante el Model Context Protocol; el paquete lleva el servidor (`ingetrazo-mcp.exe` en Windows, `ingetrazo --mcp` en Linux) y el menú te da las líneas exactas para conectarlo.
 
-Funciona con la convención de [IngePresupuestos](https://ingepresupuestos.com)
-que quizá ya conoces:
-
-- Elige un **proveedor** — Groq (gratis), Anthropic (Claude), OpenAI, Google
-  Gemini, OpenRouter, DeepSeek u **Ollama local** (sin clave, sin internet) —
-  o deja "Auto" y el prefijo de la clave lo detecta solo.
-- El enlace bajo el campo te lleva a **obtener la clave** de cada proveedor.
-  Cada proveedor **recuerda su propia clave y su modelo**: si se te acaban los
-  tokens de uno, cambias de proveedor en dos clics.
-- **Modelos** lista los modelos que tu clave realmente puede usar, y
-  **Probar conexión** valida la clave antes de empezar.
-- Con proveedores que "ven" (Claude, GPT, Gemini), el asistente recibe
-  **capturas del viewport** después de cada paso: mira lo que construyó y lo
-  corrige solo.
-
-## Puente IA (MCP)
-
-**Extensiones ▸ Puente IA (MCP)** es la otra vía: en lugar de chatear dentro
-de IngeTrazo, un agente externo (Claude Code, Claude Desktop) dirige el modelo
-mediante el [Model Context Protocol](https://modelcontextprotocol.io), con las
-mismas garantías transaccionales. La guía de conexión está en el repositorio:
-[`docs/ai-bridge.md`](https://github.com/ingelibre/ingetrazo/blob/main/docs/ai-bridge.md).
+En los dos casos cada acción es **un paso de deshacer** y un fallo revierte el documento entero — las mismas garantías de la Consola Python.
 
 ## Instalar una extensión de terceros
 

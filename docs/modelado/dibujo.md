@@ -10,7 +10,8 @@ Todas comparten el mismo lenguaje: clic para empezar, las **inferencias** te eng
 | **Rectángulo** | `R` | Dos esquinas; teclea `ancho,alto` (ej. `6,4`). |
 | **Rectángulo rotado** | `K` | Primero la base (dos puntos), luego el alto. |
 | **Círculo** | `C` | Centro y radio; teclea el radio. |
-| **Polígono** | `G` | Centro y radio; teclea el número de lados. |
+| **Polígono** | — | Centro y radio; teclea el número de lados (la `G` es Crear componente, como en SketchUp). |
+| **Mano alzada** | — | Arrastra y suelta: una polilínea suavizada que se selecciona entera de un clic, como un círculo; si cierra, crea la cara. |
 
 ## Arcos
 
@@ -19,6 +20,7 @@ Todas comparten el mismo lenguaje: clic para empezar, las **inferencias** te eng
 | **Arco 3 puntos** | `A` | Extremo, extremo y un punto del arco. |
 | **Arco por centro** | `J` | Centro, radio inicial y barrido. |
 | **Arco tangente** | `O` | Continúa tangente desde el extremo de una arista. |
+| **Porción** (Pie) | — | Como Arco por centro, pero cierra el sector con los dos radios y su cara. |
 
 ## Derivadas
 
@@ -26,7 +28,7 @@ Todas comparten el mismo lenguaje: clic para empezar, las **inferencias** te eng
 |---|---|---|
 | **Equidistancia (Offset)** | `F` | Copia el contorno de una cara hacia adentro o afuera, a distancia exacta. El clásico para espesores de muro. |
 | **Sígueme (Follow me)** | `W` | Extruye un perfil a lo largo de un camino: molduras, tuberías, sardineles. |
-| **Texto 3D** | — | Dibujo ▸ Texto 3D: letras con volumen real, listas para extruir o pintar. |
+| **Texto 3D** | — | Dibujo ▸ Texto 3D: letras con volumen real (fuente, negrita, cursiva, altura y espesor), listas para extruir o pintar. |
 
 ### Sígueme, tres maneras
 

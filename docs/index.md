@@ -21,7 +21,7 @@ Bienvenido al manual de usuario de **IngeTrazo**, el modelador 3D libre para ing
 
     ---
 
-    Las herramientas de dibujo y edición: empujar/tirar, sígueme, grupos y componentes, materiales, capas y escenas.
+    Las herramientas de dibujo y edición: empujar/tirar, sígueme, escalar, grupos y componentes, materiales, capas, escenas, secciones, estilos y sombras.
 
     [:octicons-arrow-right-24: Modelar](modelado/dibujo.md)
 
@@ -45,7 +45,7 @@ Bienvenido al manual de usuario de **IngeTrazo**, el modelador 3D libre para ing
 
     ---
 
-    Del modelo al plano: vistas a escala exacta, cotas ancladas al modelo, cajetín y PDF vectorial.
+    Del modelo al plano: vistas a escala exacta con líneas ocultas exactas, cotas ancladas al modelo, niveles, cadenas, llamadas, cajetín con plantillas y PDF vectorial.
 
     [:octicons-arrow-right-24: Componer](laminas/index.md)
 
@@ -53,9 +53,25 @@ Bienvenido al manual de usuario de **IngeTrazo**, el modelador 3D libre para ing
 
     ---
 
-    Abre tus `.skp` de SketchUp (todas las versiones, sin conversores) y exporta IFC, STL, OBJ, glTF y DXF.
+    Abre tus `.skp` de SketchUp (todas las versiones, sin conversores), DXF y DWG; exporta `.skp`, IFC, STL, OBJ, glTF y DXF.
 
     [:octicons-arrow-right-24: Intercambiar](importar-exportar.md)
+
+-   :material-robot-outline: **Modelar con la IA**
+
+    ---
+
+    El Asistente IA dentro de la app, o Claude dirigiendo IngeTrazo por MCP: describe, adjunta una foto, y la IA escribe la receta que el motor ejecuta.
+
+    [:octicons-arrow-right-24: Modelar con la IA](ia.md)
+
+-   :material-folder-open-outline: **Ejemplos para abrir**
+
+    ---
+
+    Cuatro documentos reales de la plaza de Yanque, tres con su lámina A3 y su PDF: la forma más rápida de ver de qué es capaz el programa.
+
+    [:octicons-arrow-right-24: Abrir los ejemplos](primeros-pasos/ejemplos.md)
 
 </div>
 

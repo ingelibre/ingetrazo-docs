@@ -14,6 +14,8 @@ Con una ruta seleccionada, el **panel de perfil** muestra el perfil longitudinal
 
 - **Progresivas** en el eje horizontal, cotas en el vertical.
 - Export a **CSV** (para tu hoja de cálculo o diseño geométrico) y a **PNG**.
+- **En las láminas**: la herramienta **Perfil** del compositor dibuja el perfil sobre la hoja con escala horizontal y vertical, exageración, progresivas y cotas; y los marcos de planta muestran el trazado con sus **progresivas** (0+000, 0+020…), con el mismo paso que el perfil, para que coincidan. Ver [Marcos de vista](../laminas/marcos.md#extras-del-marco).
+- **Herramientas ▸ Perfil del terreno de la selección** saca el perfil de cualquier polilínea seleccionada; con clic derecho sobre una ruta eliges si su superficie es plana, drapeada al relieve o solo la línea, y **Convertir ruta en geometría** la vuelve aristas del modelo.
 
 ## Puntos de estación total / GPS
 

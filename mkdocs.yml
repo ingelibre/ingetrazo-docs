@@ -65,12 +65,17 @@ nav:
       - Instalación: primeros-pasos/instalacion.md
       - La interfaz: primeros-pasos/interfaz.md
       - Tu primer modelo: primeros-pasos/primer-modelo.md
+      - Ejemplos para abrir: primeros-pasos/ejemplos.md
   - Modelado:
       - Herramientas de dibujo: modelado/dibujo.md
       - Editar la geometría: modelado/edicion.md
-      - Materiales y texturas: modelado/materiales.md
+      - Materiales, texturas y componentes: modelado/materiales.md
       - Capas, escenas y organización: modelado/organizacion.md
+      - Planos de sección: modelado/secciones.md
+      - Estilos, sombras y pantalla: modelado/estilos-sombras.md
+      - Imágenes de referencia: modelado/imagenes-referencia.md
       - Cotas y anotación 3D: modelado/cotas-texto.md
+  - Modelar con la IA: ia.md
   - BIM y metrados: bim.md
   - Importar y exportar: importar-exportar.md
   - Terreno:
@@ -81,9 +86,10 @@ nav:
   - Composición de láminas:
       - Conceptos y hojas: laminas/index.md
       - Marcos de vista y escala: laminas/marcos.md
-      - Cotas, formas y cajetín: laminas/anotacion.md
+      - Cotas, textos, formas y cajetín: laminas/anotacion.md
       - Exportar PDF y DXF: laminas/exportar.md
   - Extensiones: extensiones.md
+  - Preferencias: preferencias.md
   - Atajos de teclado: atajos.md
   - Preguntas frecuentes: faq.md
   - Licencia: licencia.md

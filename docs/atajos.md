@@ -10,30 +10,38 @@ Cada botón de la interfaz muestra su atajo al pasar el mouse. Los principales:
 | `R` | Rectángulo |
 | `K` | Rectángulo rotado |
 | `C` | Círculo |
-| `G` | Polígono |
 | `A` | Arco 3 puntos |
 | `J` | Arco por centro |
 | `O` | Arco tangente |
 | `F` | Equidistancia (Offset) |
 | `W` | Sígueme (Follow me) |
 
+Polígono, Mano alzada, Porción y Texto 3D no tienen tecla: están en el menú Dibujo y en la barra.
+
 ## Edición
 
 | Tecla | Herramienta |
 |:-:|---|
 | `Espacio` | Seleccionar |
-| `M` | Mover |
-| `Q` | Rotar |
-| `S` | Escalar |
+| `Mayús` + clic | Alternar en la selección |
+| `Ctrl` + clic | Añadir a la selección |
+| `Mayús` + `Ctrl` + clic | Quitar de la selección |
+| `M` | Mover (`Ctrl` = copia; flechas = bloquear eje) |
+| `Q` | Rotar (`Ctrl` = copia) |
+| `S` | Escalar (`Ctrl` = desde el centro; `Mayús` = uniforme) |
 | `U` | Empujar / Tirar |
-| `E` | Borrador |
-| `B` | Pintar |
+| `E` | Borrador (`Mayús` = ocultar la arista) |
+| `B` | Pintar (`Alt` = gotero) |
+| `G` | Crear componente… |
+| `Ctrl+G` / `Ctrl+Mayús+G` | Crear grupo / Deshacer grupo |
+
+Voltear y Plano de sección están en el menú Herramientas.
 
 ## Medición y anotación
 
 | Tecla | Herramienta |
 |:-:|---|
-| `T` | Cinta métrica (guías) |
+| `T` | Medir (cinta métrica, guías) |
 | `H` | Transportador |
 | `D` | Cota |
 | `X` | Texto guía |
@@ -43,22 +51,44 @@ Cada botón de la interfaz muestra su atajo al pasar el mouse. Los principales:
 
 | Tecla | Acción |
 |:-:|---|
-| `Z` | Zoom por arrastre |
-| `P` | Perspectiva ⁄ paralela |
 | Botón central | Orbitar |
-| `Shift` + botón central | Paneo |
+| `Shift` + botón central | Desplazar |
 | Rueda | Zoom |
+| `O` / `H` | Orbitar / Desplazar con el botón izquierdo |
+| `Z` | Zoom por arrastre |
+| `F2` | Zoom a extensión |
+| `P` | Perspectiva ⁄ paralela |
+| `Ctrl+0` | Pantalla limpia |
+| `↑` `→` `←` `↓` | Bloquear eje Z / X / Y · paralelo o perpendicular a la referencia (al dibujar, mover, rotar y colocar secciones) |
+| `Mayús` | Congelar la inferencia actual |
 
 ## Generales
 
 | Tecla | Acción |
 |:-:|---|
-| `Ctrl+Z` / `Ctrl+Shift+Z` | Deshacer / Rehacer |
-| `Ctrl+G` / `Ctrl+Shift+G` | Agrupar / Desagrupar |
+| `Ctrl+Z` / `Ctrl+Mayús+Z` (o `Ctrl+Y`) | Deshacer / Rehacer |
 | `Ctrl+C` `Ctrl+V` `Ctrl+X` | Copiar, pegar, cortar |
-| `F2` | Renombrar (escenas, capas) |
+| `Ctrl+A` | Seleccionar todo |
+| `Supr` | Borrar la selección |
+| `F2` | Renombrar (en las listas de escenas y capas) |
 | `Esc` | Cancelar la herramienta / salir del grupo |
-| `Ctrl+S` | Guardar |
+| `Ctrl+N` `Ctrl+O` `Ctrl+S` | Nuevo, abrir, guardar |
+| `Ctrl+Mayús+A` | Asistente IA |
+| `Ctrl+Mayús+P` | Consola Python |
 
-!!! tip "En el compositor de láminas"
-    `Ctrl+rueda` hace zoom sobre la hoja; `Esc` cancela una colocación a medias; `Supr` elimina el item seleccionado; clic derecho abre el menú de orden y bloqueo.
+## En el compositor de láminas
+
+| Tecla | Acción |
+|:-:|---|
+| `Ctrl` + rueda | Zoom sobre la hoja (rueda sola: desplazar) |
+| Botón central | Desplazar la hoja |
+| Arrastre en la hoja vacía | Cuadro de selección (izquierda → derecha: encerrado; derecha → izquierda: tocado) |
+| `Mayús` / `Ctrl` / `Mayús+Ctrl` + clic o cuadro | Alternar / añadir / quitar |
+| Doble clic en un marco | Editar la vista (`Mayús` + arrastre gira; `Enter`/`Esc` termina) |
+| Doble clic en un texto | Editar en su sitio (`Ctrl+Enter` confirma, `Esc` cancela) |
+| `Ctrl+C` `Ctrl+X` `Ctrl+V` `Ctrl+D` | Copiar, cortar, pegar, duplicar ítems |
+| `Ctrl+Mayús+C` / `Ctrl+Mayús+V` | Copiar / pegar estilo |
+| `Ctrl+G` / `Ctrl+Mayús+G` | Agrupar / desagrupar ítems |
+| `Ctrl+L` | Bloquear / desbloquear |
+| `Supr` | Eliminar el ítem seleccionado |
+| `Esc` | Cancelar una colocación a medias (cierra una cadena de cotas) |

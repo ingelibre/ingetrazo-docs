@@ -10,11 +10,11 @@ Estas son las anotaciones **dentro del modelo 3D**. Para las cotas sobre la hoja
 2. Clic en el segundo punto.
 3. Mueve para separar la línea de cota del modelo y clic para fijarla.
 
-La cota queda **anclada a la geometría**: muestra la distancia real y vive en 3D con el modelo. El panel **Cotas** de la bandeja controla el estilo (color, formato).
+La cota queda **anclada a la geometría**: muestra la distancia real y vive en 3D con el modelo. El desplegable **Estilo de cota** de la barra de herramientas controla color, altura de texto, decimales y **unidades** (metros, centímetros, pulgadas, pies, y las fraccionarias `1 1/2"` — ver [medidas por teclado](dibujo.md#medidas-por-teclado-metros-centimetros-pulgadas-pies)). Las cotas se seleccionan, se mueven con su ancla clavada, se borran con `Supr` y salen en los [marcos de las láminas](../laminas/marcos.md#extras-del-marco) si activas «Anotaciones del modelo».
 
 ## Texto guía
 
-La herramienta **Texto** (`X`) coloca etiquetas con línea guía apuntando a una cara o arista — nombres de ambientes, notas de obra. El texto siempre mira a la cámara.
+La herramienta **Texto** (`X`) coloca etiquetas con línea guía apuntando a una cara o arista — nombres de ambientes, notas de obra. El texto siempre mira a la cámara; se mueve con su ancla clavada, se edita con doble clic y viaja al `.skp`. Cotas y textos guía pueden vivir en una **capa**: apaga «Cotas» y desaparecen de la vista y de las láminas que no las quieren.
 
 ## Texto 3D
 

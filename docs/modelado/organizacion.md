@@ -24,11 +24,17 @@ El panel **Escenas** guarda vistas con nombre:
 
 El panel **Info** muestra y edita lo esencial de la selección: longitud de una arista, área de una cara, capa, material, y los metadatos BIM si los tiene.
 
-## Estilo visual
+## Escenas: qué recuerdan
 
+Además de la cámara y las capas, cada escena guarda el **estilo** activo, el **plano de sección** activo y si los cortes se ven, y la **hora del sol** de las sombras. `F2` renombra la escena (o la capa) seleccionada en su lista; **Actualizar** la re-captura desde la vista actual.
+
+## Estilo visual, secciones y sombras
+
+- Los **estilos** (Predeterminado, Arquitectónico, Línea oculta, Rayos X… y los tuyos), las **sombras con el sol real** y la pantalla limpia tienen su página: [Estilos, sombras y pantalla](estilos-sombras.md).
+- Los **planos de sección** cortan el modelo para mirar adentro: [Planos de sección](secciones.md).
+- Un plano escaneado o una foto para calcar: [Imágenes de referencia](imagenes-referencia.md).
 - **Culling de caras**: los dorsos se pintan azul grisáceo para detectar caras volteadas de un vistazo.
-- **Sombras y transparencias** se renderizan en el viewport tal como saldrán en el export de imagen.
-- Vista ▸ **Exportar imagen** guarda una captura de alta resolución del viewport.
+- Archivo ▸ Exportar ▸ **Imagen** guarda una captura de alta resolución del viewport.
 
 ## Componentes: editas uno, cambian todos
 
@@ -38,3 +44,5 @@ Las copias de un componente (Ctrl+C / Ctrl+V, o Mover con Ctrl) comparten una mi
 - **Empujar/Tirar sobre una copia desde fuera** también edita la definición: las demás copias reciben el mismo empuje.
 - **Para cambiar una sola copia**, antes de editarla usa clic derecho ▸ **Hacer único**: esa copia se desliga y las demás siguen compartiendo la definición.
 - Mirar dentro de un componente y salir sin tocar nada no cambia nada.
+- **Crear componente…** (`G`) convierte la selección en una definición con nombre; **Unir grupos** funde varios grupos en uno; **Deshacer grupo** (`Ctrl+Mayús+G`) disuelve.
+- Los componentes importados de `.skp` con **subgrupos** conservan su jerarquía: se mueven y copian como un solo objeto y su archivo no engorda. Editar dentro de uno de esos lo desarma en ese documento (como al editar un componente anidado en SketchUp).
