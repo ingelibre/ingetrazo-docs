@@ -5,8 +5,10 @@
 La herramienta **Cota** del compositor acota sobre el dibujo del marco:
 
 1. **Clic en el primer punto** — sobre un vértice o arista del dibujo aparece el **punto verde**: el snap engancha la geometría real visible del marco.
-2. **Clic en el segundo punto** (también en verde).
+2. **Clic en el segundo punto** (también en verde). Con **`Mayús`** el segundo punto queda **en horizontal o vertical** respecto del primero (gana el eje más cercano al cursor; el imán sigue actuando sobre ese eje).
 3. **Mueve y tercer clic** para separar la línea de cota del dibujo — con sus líneas de extensión, como manda el dibujo técnico.
+
+La herramienta **sigue activa** para la cota siguiente; `Esc` (con nada a medias) o el cursor la dejan.
 
 ### Cotas ancladas al modelo
 
@@ -19,7 +21,9 @@ Si ambos puntos engancharon en verde, la cota queda **anclada a los puntos 3D de
 
 ### Estilo de cota
 
-En sus propiedades: **separación**, **altura de texto**, **decimales**, **unidades** (m, cm, mm, pulgadas, pies, pies-pulgadas y sus fraccionarias), extremos (**trazos oblicuos**, flechas o ninguno), grosor, color, fondo del texto y texto manual si quieres reemplazar la medida. El agarre central de la línea permite reacomodar la separación cuando quieras. **El estilo de la última cota que editaste es el de las nuevas**, y se recuerda entre sesiones.
+En sus propiedades: **separación**, **altura de texto**, **decimales**, **unidades** (m, cm, mm, pulgadas, pies, pies-pulgadas y sus fraccionarias), extremos (**trazos oblicuos**, flechas o ninguno), grosor, color, fondo del texto y texto manual si quieres reemplazar la medida. El agarre central de la línea permite reacomodar la separación cuando quieras.
+
+**Dónde va el texto**: *Posición del texto* lo pone **encima**, **centrado** (la línea se abre alrededor), **debajo**, **al costado de la línea** o **al otro costado** (la etiqueta entera a un lado, sin cruzar la línea — lo que quieres en una cota vertical con texto horizontal); *A lo largo de la línea* lo lleva **sobre el centro**, **fuera del inicio** o **fuera del final** (el texto al lado de la cota, a izquierda o derecha). Y como en LayOut, **el texto se arrastra con el ratón** agarrándolo por las letras y se queda donde lo dejes, mientras la línea no se mueve; **Devolver el texto a su sitio** deshace el arrastre. **El estilo de la última cota que editaste es el de las nuevas**, y se recuerda entre sesiones.
 
 ### Cotas en cadena
 
@@ -52,7 +56,9 @@ La herramienta **Llamada** encuadra (rectángulo o círculo a trazos) la parte d
 
 ## Formas
 
-Línea, **flecha**, rectángulo (con **radio de esquinas**), elipse y **polígono regular** (3–24 lados). Cada forma con su **color de línea**, grosor, y — para las cerradas — **relleno con color propio**.
+Línea, **flecha**, **línea de terreno**, rectángulo (con **radio de esquinas**), elipse y **polígono regular** (3–24 lados). Cada forma con su **color de línea**, grosor, y — para las cerradas — **relleno con color propio**. En línea, flecha y línea de terreno, `Mayús` las fija en horizontal o vertical.
+
+La **línea de terreno** es el suelo de una elevación: la línea y, por debajo, lo que manda la convención de dibujo — **pelos de tierra** a 45°, **banda rayada** o **banda rellena** translúcida (el color de relleno), con largo, separación y alto ajustables en el panel. Admite pendiente y el terreno queda siempre del lado de abajo; para desniveles, un tramo por nivel. Combinada con una cota de **Nivel** («N.T.N. ±0.00») queda dicho todo.
 
 ## Texto e imágenes
 
@@ -67,7 +73,7 @@ El membrete del plano — **el** ítem de una lámina:
 - **Campos editables**: la tabla de propiedades permite renombrar, **agregar y quitar filas** (PROYECTO, AUTOR, FECHA, ESCALA, LÁMINA, y los que tu expediente pida: DISTRITO, REGIÓN…). Los valores admiten campos: `{fecha}`, `{lamina}`, `{total}`…
 - **1 a 4 columnas** de campos, lado a lado, como los cajetines anchos reales.
 - **Diseño**: siete presets de aspecto —esquinas cuadradas, redondeadas o achaflanadas; cuadrícula, banda de cabecera o minimalista; doble borde, relleno de rótulos, colores— que cambian **cómo se ve**, nunca las filas ni el tamaño. Cada detalle es editable aparte: grosores del borde exterior y de las líneas interiores, ancho de la columna de rótulos, colores de rótulo, texto y línea.
-- **Plantillas de cajetín** (botón **Plantillas…**): guarda el tuyo —filas, tamaño y aspecto— con nombre, aplícalo a otra lámina y márcalo como **predeterminado**: cada cajetín nuevo nace de él. **Copiar estilo / Pegar estilo** también funciona entre cajetines.
+- **Plantillas de cajetín** (botón **Plantillas…**): guarda el tuyo —filas, tamaño y aspecto— con nombre, aplícalo a otra lámina y márcalo como **predeterminado**: cada cajetín nuevo nace de él. **Copiar estilo / Pegar estilo** también funciona entre cajetines, y `Ctrl+C` / `Ctrl+V` lleva el cajetín entero a otra lámina (ocupa el sitio del que hubiera).
 - **Las filas se reparten el alto según lo que llevan**: un nombre de proyecto largo baja a dos o tres líneas y su fila crece —hasta tres veces su parte— a costa de las filas que no usaban la suya, así todos los valores salen del mismo tamaño; solo si aun así no cabe, la letra se condensa.
 
 ## Escala gráfica, norte y leyenda

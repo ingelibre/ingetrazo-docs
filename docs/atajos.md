@@ -60,6 +60,7 @@ Voltear y Plano de sección están en el menú Herramientas.
 | `P` | Perspectiva ⁄ paralela |
 | `Ctrl+0` | Pantalla limpia |
 | `↑` `→` `←` `↓` | Bloquear eje Z / X / Y · paralelo o perpendicular a la referencia (al dibujar, mover, rotar y colocar secciones) |
+| `↑` `→` `←` antes del primer clic | Círculo, polígono, rectángulo y arcos: fijar el **plano** de dibujo (XY / YZ / XZ); la misma flecha lo libera |
 | `Mayús` | Congelar la inferencia actual |
 
 ## Generales
@@ -90,5 +91,10 @@ Voltear y Plano de sección están en el menú Herramientas.
 | `Ctrl+Mayús+C` / `Ctrl+Mayús+V` | Copiar / pegar estilo |
 | `Ctrl+G` / `Ctrl+Mayús+G` | Agrupar / desagrupar ítems |
 | `Ctrl+L` | Bloquear / desbloquear |
-| `Supr` | Eliminar el ítem seleccionado |
-| `Esc` | Cancelar una colocación a medias (cierra una cadena de cotas) |
+| `Supr` | Eliminar el ítem seleccionado (o la guía seleccionada) |
+| `Esc` | Cancelar una colocación a medias (cierra una cadena de cotas); con nada a medias, deja la herramienta |
+| Flechas / `Mayús`+flechas / `Alt`+flechas | Mover la selección 1 mm / 10 mm / 0,1 mm |
+| `Ctrl+Alt` + clic | Seleccionar el ítem que está debajo (repite para seguir bajando) |
+| `Mayús` al trazar una cota, línea o flecha | Fijar el segundo punto en horizontal o vertical |
+| Arrastre desde una regla | Sacar una guía a la hoja (de vuelta a la regla la quita) |
+| `Ctrl+S` / `Ctrl+Mayús+S` | Guardar el documento desde el compositor |

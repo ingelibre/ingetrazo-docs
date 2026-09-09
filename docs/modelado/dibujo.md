@@ -62,6 +62,8 @@ Las comillas y la barra de fracción solo se aceptan después de un número, as�
 
 Las herramientas dibujan sobre el **plano que estás mirando**: en vista superior dibujas en planta; si empiezas sobre una cara existente, dibujas sobre esa cara. El primer punto sin inferencia queda en el plano de la vista actual — así el trazo nunca "se escapa" a una profundidad inesperada.
 
+**Fijar el plano con las flechas** (círculo, polígono, rectángulo y arcos, como en SketchUp): antes del primer clic, `→` fija el plano normal a X (el YZ), `←` el normal a Y (el XZ) y `↑` el normal a Z (el XY); la misma flecha otra vez, o `Esc`, lo libera, y una etiqueta del color del eje lo indica. Con el plano fijado, el centro puede caer sobre una cara y la figura sale igualmente en el plano elegido. La figura gasta el bloqueo; tras el primer clic, las flechas vuelven a ser el bloqueo de eje de siempre.
+
 !!! tip "Dibujar en vistas estándar"
     Para trabajo de precisión tipo 2D, combina **vista estándar + proyección paralela** (`P`): frontal para fachadas, superior para plantas. Las medidas que ves en pantalla son las reales del plano, sin efecto de perspectiva.
 

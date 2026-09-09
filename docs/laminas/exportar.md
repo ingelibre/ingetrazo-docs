@@ -1,4 +1,6 @@
-# Exportar PDF y DXF
+# Exportar PDF, imagen y DXF
+
+Todo está en la **barra de lámina**, bajo el título de la ventana del compositor: vista previa, PDF e imagen; el DXF, en el menú del marco.
 
 ## Vista previa de impresión
 
@@ -7,6 +9,10 @@
 ## PDF de una lámina
 
 **Exportar PDF…** escribe la lámina actual con métrica física exacta: el A3 sale A3, la escala 1:100 **mide** 1:100 sobre el papel impreso. El PDF es **vectorial** — las líneas del estilo Vectorial son curvas reales con sus tres plumas y su poché, no píxeles: se imprime nítido a cualquier tamaño. Nada de la pantalla se cuela: ni la selección del modelo, ni las manijas, ni los imanes.
+
+## PNG o JPG de una lámina
+
+**Exportar imagen…** escribe la lámina actual como **PNG o JPG**: eliges el archivo y luego la resolución en puntos por pulgada (200 por defecto; se recuerda la última). La imagen sale al tamaño exacto del papel —un A3 apaisado a 200 ppp son 3307 × 2339 píxeles—, con fondo blanco y el mismo pintor que el PDF, lista para un informe, un correo o una presentación.
 
 ## El atlas: todas las láminas en un PDF
 
@@ -19,4 +25,4 @@ Con un marco seleccionado, **Exportar vista como DXF…** escribe el dibujo vect
 !!! tip "Antes de exportar"
     - **Actualiza los marcos** si editaste el modelo con el compositor abierto (o deja el renderizado automático encendido).
     - Revisa a **zoom 100 %** (tamaño real del papel) o en la vista previa: los grosores de línea y tamaños de texto se ven exactamente como saldrán impresos.
-    - Los tres [ejemplos](../primeros-pasos/ejemplos.md) con lámina traen el PDF resultante al lado, por si quieres comparar.
+    - Los cuatro [ejemplos](../primeros-pasos/ejemplos.md) traen el PDF de su lámina al lado, por si quieres comparar.
