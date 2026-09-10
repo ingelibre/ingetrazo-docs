@@ -10,9 +10,9 @@ Cada botón de la interfaz muestra su atajo al pasar el mouse. Los principales:
 | `R` | Rectángulo |
 | `K` | Rectángulo rotado |
 | `C` | Círculo |
-| `A` | Arco 3 puntos |
-| `J` | Arco por centro |
-| `O` | Arco tangente |
+| `A` | Arco (cuerda y comba) |
+| `J` | Arco 3 puntos |
+| `Mayús+O` | Arco por centro |
 | `F` | Equidistancia (Offset) |
 | `W` | Sígueme (Follow me) |
 
@@ -42,7 +42,7 @@ Voltear y Plano de sección están en el menú Herramientas.
 | Tecla | Herramienta |
 |:-:|---|
 | `T` | Medir (cinta métrica, guías) |
-| `H` | Transportador |
+| `Mayús+H` | Transportador |
 | `D` | Cota |
 | `X` | Texto guía |
 | `Y` | Ruta (terreno) |
@@ -56,7 +56,7 @@ Voltear y Plano de sección están en el menú Herramientas.
 | Rueda | Zoom |
 | `O` / `H` | Orbitar / Desplazar con el botón izquierdo |
 | `Z` | Zoom por arrastre |
-| `F2` | Zoom a extensión |
+| `Mayús+Z` (o `F2`) | Zoom a extensión |
 | `P` | Perspectiva ⁄ paralela |
 | `Ctrl+0` | Pantalla limpia |
 | `↑` `→` `←` `↓` | Bloquear eje Z / X / Y · paralelo o perpendicular a la referencia (al dibujar, mover, rotar y colocar secciones) |

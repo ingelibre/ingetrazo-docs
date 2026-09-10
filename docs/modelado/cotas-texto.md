@@ -23,5 +23,5 @@ Dibujo ▸ **Texto 3D** genera letras con geometría real (extruibles, pintables
 ## Cinta métrica y transportador
 
 - **Cinta** (`T`): mide y deja **guías** punteadas de construcción (líneas infinitas o puntos guía).
-- **Transportador** (`H`): guías angulares.
+- **Transportador** (`Mayús+H`): guías angulares.
 - Las guías no son geometría: no salen en exports ni metrados, y se limpian con Edición ▸ Eliminar guías.

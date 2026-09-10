@@ -45,7 +45,7 @@ La caja de selección usa los mismos modificadores, y toma también grupos, comp
 |---|---|---|
 | **Borrador** | `E` | Clic o arrastre sobre aristas. Borrar la arista disuelve las caras que dependían de ella. **`Mayús` + Borrador oculta** el trazo en lugar de borrarlo. |
 | **Medir** (cinta métrica) | `T` | Mide entre dos puntos y crea **guías** de construcción. |
-| **Transportador** | `H` | Mide ángulos y crea guías angulares. |
+| **Transportador** | `Mayús+H` | Mide ángulos y crea guías angulares. |
 | **Eliminar guías** | — | Edición ▸ Eliminar guías, cuando ya cumplieron su función. |
 
 ## Ocultar aristas

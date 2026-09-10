@@ -17,9 +17,9 @@ Todas comparten el mismo lenguaje: clic para empezar, las **inferencias** te eng
 
 | Herramienta | Atajo | Cómo se usa |
 |---|---|---|
-| **Arco 3 puntos** | `A` | Extremo, extremo y un punto del arco. |
-| **Arco por centro** | `J` | Centro, radio inicial y barrido. |
-| **Arco tangente** | `O` | Continúa tangente desde el extremo de una arista. |
+| **Arco** | `A` | Los dos extremos (la cuerda) y luego la comba. Es el arco de 2 puntos de SketchUp. |
+| **Arco 3 puntos** | `J` | Extremo, un punto por el que pasa y el otro extremo. |
+| **Arco por centro** | `Mayús+O` | Centro, radio inicial y barrido. |
 | **Porción** (Pie) | — | Como Arco por centro, pero cierra el sector con los dos radios y su cara. |
 
 ## Derivadas
