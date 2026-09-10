@@ -19,7 +19,7 @@ La ventana de IngeTrazo tiene cuatro zonas:
 | **Zoom** | Rueda del mouse (dos dedos en el touchpad); `Z` para zoom por arrastre; Zoom Ventana para encuadrar una región |
 | **Encuadrar todo** | Zoom a extensión (`F2`, o en la barra de cámara) |
 | **Vistas estándar** | Menú Cámara ▸ Vistas estándar: superior, frontal, lateral, isométrica… |
-| **Perspectiva / paralela** | `P` alterna la proyección |
+| **Perspectiva / paralela** | `Mayús+P` alterna la proyección |
 | **Pantalla limpia** | `Ctrl+0` esconde barras y paneles; otra vez los devuelve |
 
 !!! tip "El VCB: medidas exactas por teclado"

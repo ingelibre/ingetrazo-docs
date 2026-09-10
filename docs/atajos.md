@@ -29,7 +29,7 @@ Polígono, Mano alzada, Porción y Texto 3D no tienen tecla: están en el menú 
 | `M` | Mover (`Ctrl` = copia; flechas = bloquear eje) |
 | `Q` | Rotar (`Ctrl` = copia) |
 | `S` | Escalar (`Ctrl` = desde el centro; `Mayús` = uniforme) |
-| `U` | Empujar / Tirar |
+| `P` (o `U`) | Empujar / Tirar |
 | `E` | Borrador (`Mayús` = ocultar la arista) |
 | `B` | Pintar (`Alt` = gotero) |
 | `G` | Crear componente… |
@@ -57,7 +57,7 @@ Voltear y Plano de sección están en el menú Herramientas.
 | `O` / `H` | Orbitar / Desplazar con el botón izquierdo |
 | `Z` | Zoom por arrastre |
 | `Mayús+Z` (o `F2`) | Zoom a extensión |
-| `P` | Perspectiva ⁄ paralela |
+| `Mayús+P` | Perspectiva ⁄ paralela |
 | `Ctrl+0` | Pantalla limpia |
 | `↑` `→` `←` `↓` | Bloquear eje Z / X / Y · paralelo o perpendicular a la referencia (al dibujar, mover, rotar y colocar secciones) |
 | `↑` `→` `←` antes del primer clic | Círculo, polígono, rectángulo y arcos: fijar el **plano** de dibujo (XY / YZ / XZ); la misma flecha lo libera |

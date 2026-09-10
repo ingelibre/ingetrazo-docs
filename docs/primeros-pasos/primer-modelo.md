@@ -12,7 +12,7 @@ Vamos a levantar una casita de 6 × 4 m con medidas exactas. Es el recorrido ese
 
 ## 2. Levantar los muros
 
-1. Activa **Empujar/Tirar** (`U`).
+1. Activa **Empujar/Tirar** (`P`).
 2. Clic sobre la cara del rectángulo, sube, teclea `2.7` y Enter. La caja mide 2.70 m de alto.
 
 ## 3. Abrir la puerta y la ventana

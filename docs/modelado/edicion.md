@@ -2,7 +2,7 @@
 
 ## Empujar / Tirar
 
-**`U`** — la herramienta que convierte dibujos en volúmenes. Clic sobre una cara, mueve, teclea la distancia y Enter.
+**`P`** (o `U`) — la herramienta que convierte dibujos en volúmenes. Clic sobre una cara, mueve, teclea la distancia y Enter.
 
 ![Empujar/Tirar en acción: la caseta toma volumen y el VCB (abajo a la derecha) recibe la distancia exacta.](../images/modelado.jpeg)
 
