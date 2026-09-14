@@ -24,6 +24,17 @@ Con el selector **Coordenadas** eliges cómo ver y escribir la posición — y e
 
 Ambos marcos están siempre sincronizados por debajo; cambiar de modo no pierde nada. Con el proyecto georreferenciado, la **barra de estado muestra la lectura UTM continua** del cursor.
 
+## El norte: gira el mapa, no el modelo
+
+Un edificio o una plaza se dibuja **a escuadra con los ejes** (el rojo y el verde): así las vistas Frontal, Derecha e Izquierda, los bloqueos de eje y el rectángulo funcionan sin pensar. Pero el sitio rara vez mira al norte. Si giras el modelo para acomodarlo sobre el satélite, pierdes todo eso.
+
+IngeTrazo hace lo que SketchUp: el modelo se queda en sus ejes y **el mapa gira por debajo**. El campo **Norte** del panel dice hacia dónde queda el norte verdadero, en grados en sentido horario desde el eje verde (0° = el eje verde apunta al norte). Al cambiarlo giran el mapa base, el terreno 3D, las rutas y puntos importados y las sombras; el modelo no se mueve.
+
+**¿Ya giraste y arrastraste el modelo sobre el mapa?** Selecciónalo (tiene que ser un solo componente de primer nivel — agrúpalo si hace falta) y pulsa **Enderezar modelo sobre el mapa**: el modelo vuelve a sus propios ejes, el origen pasa a la esquina del modelo y el ángulo del norte queda calculado, de modo que **nada se mueve sobre el mapa**. Las escenas guardadas, las cotas y las láminas ancladas al modelo viajan con él. Es un solo paso de deshacer.
+
+!!! note "Altura"
+    Al enderezar, el modelo recupera las alturas con las que se dibujó y el mapa sigue en z = 0 (es el plano de referencia). Si el modelo estaba flotando sobre el mapa, baja a su sitio.
+
 ## El mapa base
 
 - **Fuentes**: satélite Esri, OpenStreetMap y las que agregues — cualquier servidor de teselas **XYZ** (tu propio ortofoto servido desde QGIS, por ejemplo) se guarda con nombre y queda para siempre en el menú.
