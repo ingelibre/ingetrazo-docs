@@ -70,7 +70,7 @@ en el viewport para que las encuentres de un vistazo.
 Las dos formas de **modelar con la IA** tienen su propia página: [Modelar con la IA](ia.md). En resumen:
 
 - **Extensiones ▸ Asistente IA** (`Ctrl+Shift+A`): un chat dentro de IngeTrazo donde describes lo que quieres —o adjuntas una foto— con la clave del proveedor que elijas (Groq gratis, Gemini, OpenAI, Anthropic, OpenRouter, DeepSeek u Ollama local).
-- **Extensiones ▸ Puente IA (MCP)**: Claude Code o Claude Desktop dirigen la app abierta mediante el Model Context Protocol; el paquete lleva el servidor (`ingetrazo-mcp.exe` en Windows, `ingetrazo --mcp` en Linux) y el menú te da las líneas exactas para conectarlo.
+- **Extensiones ▸ Puente IA (MCP)**: cualquier agente que hable el Model Context Protocol (Claude Code, Claude Desktop, Cursor, VS Code, Gemini CLI, Codex CLI…) dirige la app abierta; el paquete lleva el servidor (`ingetrazo-mcp.exe` en Windows, `ingetrazo --mcp` en Linux) y el menú te da las líneas exactas para conectarlo.
 
 En los dos casos cada acción es **un paso de deshacer** y un fallo revierte el documento entero — las mismas garantías de la Consola Python.
 

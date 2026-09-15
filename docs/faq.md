@@ -10,7 +10,7 @@ Sí — todo el modelador, el BIM y el compositor de láminas funcionan **offlin
 
 ## ¿Tiene inteligencia artificial?
 
-Sí, de dos formas: el **Asistente IA** integrado (chat en español con la clave del proveedor que prefieras; Groq tiene cuota gratis, y Ollama corre en tu propia máquina) y el **puente MCP** para que Claude Desktop o Claude Code dibujen en la app abierta. En los dos casos la IA genera recetas que el motor ejecuta, cada paso se deshace y el modelo queda editable a mano. Ver [Modelar con la IA](ia.md).
+Sí, de dos formas: el **Asistente IA** integrado (chat en español con la clave del proveedor que prefieras; Groq tiene cuota gratis, y Ollama corre en tu propia máquina) y el **puente MCP** para que cualquier agente con MCP (Claude Code, Claude Desktop, Cursor, VS Code, Gemini CLI…) dibuje en la app abierta. En los dos casos la IA genera recetas que el motor ejecuta, cada paso se deshace y el modelo queda editable a mano. Ver [Modelar con la IA](ia.md).
 
 ## ¿Puedo abrir mis `.skp` de SketchUp? ¿Y guardar?
 

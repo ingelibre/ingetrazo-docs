@@ -7,11 +7,11 @@ IngeTrazo tiene dos maneras de dejar que una inteligencia artificial modele por 
 - Cada receta pasa por el **guard de hermeticidad**: los sólidos que produce son sólidos de verdad, medibles e imprimibles.
 - Lo que construye es geometría normal: grupos con nombre que editas a mano, pintas, acotas y llevas a las láminas.
 
-| | Asistente IA (dentro de la app) | Puente MCP (desde Claude) |
+| | Asistente IA (dentro de la app) | Puente MCP (desde un agente externo) |
 |---|---|---|
-| Dónde | **Extensiones ▸ Asistente IA** (`Ctrl+Mayús+A`) | **Extensiones ▸ Puente IA (MCP)** + Claude Code o Claude Desktop |
-| Qué necesitas | Una clave API del proveedor que elijas (Groq tiene cuota gratis) u Ollama local | Claude Code o Claude Desktop instalados |
-| Cómo hablas | Chat en español dentro de IngeTrazo, con foto opcional | Conversación en Claude; el agente dibuja en la app abierta |
+| Dónde | **Extensiones ▸ Asistente IA** (`Ctrl+Mayús+A`) | **Extensiones ▸ Puente IA (MCP)** + cualquier cliente MCP: Claude Code, Claude Desktop, Cursor, VS Code, Gemini CLI, Codex CLI… |
+| Qué necesitas | Una clave API del proveedor que elijas (Groq tiene cuota gratis) u Ollama local | Un cliente MCP instalado (con su propia cuenta o clave) |
+| Cómo hablas | Chat en español dentro de IngeTrazo, con foto opcional | Conversación en tu agente; él dibuja en la app abierta |
 | Quién ve el modelo | El asistente recibe capturas del viewport (opcional) | El agente pide capturas y consulta el modelo cuando quiere |
 
 ## El Asistente IA, paso a paso
@@ -50,7 +50,7 @@ IngeTrazo tiene dos maneras de dejar que una inteligencia artificial modele por 
 
 ![Escritorio Ubuntu completo: Claude Code en la terminal, a la izquierda, lista las medidas de la mesa con cuatro sillas que acaba de dibujar por el puente; IngeTrazo, a la derecha, muestra el modelo y el diálogo Puente IA (MCP) con la línea de conexión.](images/mcp-claude.jpeg)
 
-El [Model Context Protocol](https://modelcontextprotocol.io) deja que un agente externo —Claude Code en la terminal o Claude Desktop— opere IngeTrazo **en vivo, con la app abierta**: dibuja, consulta y mira el modelo, y cada acción suya es un paso de deshacer.
+El [Model Context Protocol](https://modelcontextprotocol.io) es un **estándar abierto**, no algo de Claude: cualquier agente que hable MCP —Claude Code, Claude Desktop, Cursor, VS Code con Copilot, Windsurf, Gemini CLI, Codex CLI…— puede operar IngeTrazo **en vivo, con la app abierta**: dibuja, consulta y mira el modelo, y cada acción suya es un paso de deshacer. IngeTrazo no elige ni paga el modelo: eso lo pone tu cliente.
 
 1. **Enciende el puente**: **Extensiones ▸ Puente IA (MCP)**. IngeTrazo arranca un servidor local (solo en `127.0.0.1`, puerto 4763) y abre una ventana con las líneas exactas para tu sistema, con botón **Copiar**. El mismo menú lo apaga.
 2. **Conecta tu cliente** — una sola vez:
@@ -83,6 +83,20 @@ El [Model Context Protocol](https://modelcontextprotocol.io) deja que un agente 
         }
         ```
 
+    === "Otros clientes MCP"
+
+        Todos toman el **mismo bloque** `mcpServers` de arriba (o su equivalente), cada uno en su archivo:
+
+        | Cliente | Dónde se pega |
+        |---|---|
+        | Cursor | `~/.cursor/mcp.json` (o Ajustes ▸ MCP ▸ *Add new server*) |
+        | VS Code (Copilot) | `.vscode/mcp.json` del proyecto, con la clave `servers` en vez de `mcpServers` |
+        | Windsurf | `~/.codeium/windsurf/mcp_config.json` |
+        | Gemini CLI | `~/.gemini/settings.json` |
+        | Codex CLI | `~/.codex/config.toml`, sección `[mcp_servers.ingetrazo]` con `command` y `args` |
+
+        En todos, `command` es el ejecutable de IngeTrazo con `--mcp` (o `ingetrazo-mcp.exe` en Windows), tal como lo muestra la ventana del puente.
+
 3. **Pídele cosas**, con IngeTrazo abierto y el puente encendido: *«diseña una mesa de comedor de 1,60 × 0,90 con cuatro sillas de madera»*, *«dibuja el arco de la lámina E02 con todo su acero»*, *«muéstrame cómo quedó»*. El agente escribe recetas, las ejecuta, toma capturas para revisarse y te cuenta lo que hizo. Tú miras el resultado en la app en tiempo real y corriges como con cualquier colega: *«las sillas están muy pegadas»*.
 
 Lo que el agente puede hacer:
@@ -94,8 +108,8 @@ Lo que el agente puede hacer:
 | `screenshot` | Renderiza el viewport real: el agente mira e itera. |
 | `undo` / `redo` | La historia de siempre. |
 
-!!! tip "Si Claude no responde"
-    Comprueba que IngeTrazo sigue abierto **con el puente encendido** (el menú Extensiones lo muestra como *listening*), que la ruta del comando existe, y en Claude Desktop que el servidor aparece en Configuración ▸ Desarrollador ▸ MCP sin error. El servidor acepta un cliente a la vez y nunca escucha fuera de tu máquina.
+!!! tip "Si el agente no responde"
+    Comprueba que IngeTrazo sigue abierto **con el puente encendido** (el menú Extensiones lo muestra como *listening*), que la ruta del comando existe, y en tu cliente que el servidor `ingetrazo` aparece conectado y sin error (en Claude Desktop: Configuración ▸ Desarrollador ▸ MCP). El servidor acepta un cliente a la vez y nunca escucha fuera de tu máquina.
 
 ## Lo que se ha hecho así
 
