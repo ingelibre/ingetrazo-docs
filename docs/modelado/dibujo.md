@@ -64,6 +64,8 @@ Las herramientas dibujan sobre el **plano que estás mirando**: en vista superio
 
 **Fijar el plano con las flechas** (círculo, polígono, rectángulo y arcos, como en SketchUp): antes del primer clic, `→` fija el plano normal a X (el YZ), `←` el normal a Y (el XZ) y `↑` el normal a Z (el XY); la misma flecha otra vez, o `Esc`, lo libera, y una etiqueta del color del eje lo indica. Con el plano fijado, el centro puede caer sobre una cara y la figura sale igualmente en el plano elegido. La figura gasta el bloqueo; tras el primer clic, las flechas vuelven a ser el bloqueo de eje de siempre.
 
+**Perpendicular a una arista con `↓`** (el bloqueo magenta de SketchUp): antes del primer clic, con el cursor sobre una arista, `↓` fija el plano de dibujo perpendicular a esa arista; sobre una cara, paralelo a ella. El anillo del cursor se pinta magenta y `↓` otra vez lo libera. Es la manera de dibujar un tubo sobre un eje inclinado: traza la línea del eje, pulsa `↓` sobre ella, pon el centro del círculo en su extremo, da el radio y aplica Sígueme; el círculo ya sale perpendicular al eje, sin rotarlo después.
+
 !!! tip "Dibujar en vistas estándar"
     Para trabajo de precisión tipo 2D, combina **vista estándar + proyección paralela** (`P`): frontal para fachadas, superior para plantas. Las medidas que ves en pantalla son las reales del plano, sin efecto de perspectiva.
 

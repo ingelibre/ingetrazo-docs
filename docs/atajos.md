@@ -61,6 +61,7 @@ Voltear y Plano de sección están en el menú Herramientas.
 | `Ctrl+0` | Pantalla limpia |
 | `↑` `→` `←` `↓` | Bloquear eje Z / X / Y · paralelo o perpendicular a la referencia (al dibujar, mover, rotar y colocar secciones) |
 | `↑` `→` `←` antes del primer clic | Círculo, polígono, rectángulo y arcos: fijar el **plano** de dibujo (XY / YZ / XZ); la misma flecha lo libera |
+| `↓` antes del primer clic | Círculo, polígono, rectángulo y arcos: plano **perpendicular a la arista** bajo el cursor (o paralelo a la cara), en magenta; `↓` otra vez lo libera |
 | `Mayús` | Congelar la inferencia actual |
 
 ## Generales
