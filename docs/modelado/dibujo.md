@@ -78,4 +78,6 @@ Los puntos de colores mientras dibujas:
 - **Rojo/verde/azul** — sobre un eje del sistema (X este, Y norte, Z vertical).
 - **Magenta** — paralela o perpendicular a una arista existente.
 
-Mantén el mouse un instante sobre un punto para "memorizarlo" y proyectar desde él.
+Mantén el mouse un instante sobre un punto para "memorizarlo" y proyectar desde él: al alinearte con él por un eje aparece una línea punteada desde el punto (**Desde el punto**).
+
+Y en **otra pared** —perpendicular o la de enfrente—, al pasar a la altura de un punto memorizado el cursor se engancha a una línea punteada que recorre esa pared a esa altura (**A la altura del punto**): así se ponen todas las ventanas de una casa a la misma altura sin líneas guía. Sobre el suelo, bajo un punto alto, lo mismo en planta (**En línea con el punto**).
