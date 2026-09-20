@@ -17,7 +17,7 @@ Todas comparten el mismo lenguaje: clic para empezar, las **inferencias** te eng
 
 | Herramienta | Atajo | Cómo se usa |
 |---|---|---|
-| **Arco** | `A` | Los dos extremos (la cuerda) y luego la comba. Es el arco de 2 puntos de SketchUp. |
+| **Arco** | `A` | Los dos extremos (la cuerda) y luego la comba. Es el arco de 2 puntos de SketchUp. Teclea la comba, o `2r` para el radio. **Redondear una esquina**: empieza sobre una arista, y en la arista vecina, a la misma distancia de la esquina, el arco se vuelve **magenta** (tangente a las dos); doble clic ahí lo dibuja y recorta la esquina, y con el arco magenta **un número tecleado es el radio del redondeo**, manteniendo las tangencias. |
 | **Arco 3 puntos** | `J` | Extremo, un punto por el que pasa y el otro extremo. |
 | **Arco por centro** | `Mayús+O` | Centro, radio inicial y barrido. |
 | **Porción** (Pie) | — | Como Arco por centro, pero cierra el sector con los dos radios y su cara. |
