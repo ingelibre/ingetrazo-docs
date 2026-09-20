@@ -21,7 +21,7 @@ El mismo panel tiene **Norma**, y es una propiedad **del documento**: viaja dent
 
 En las dos, el texto se orienta para leerse girando la cabeza a la **izquierda**: una cota vertical se lee de abajo arriba, la dibujes hacia arriba o hacia abajo.
 
-La norma manda sobre las cotas del modelo y sobre las de la lámina, y decide con qué posición de texto nace una cota nueva. En el panel de la lámina, cada posición dice a qué norma pertenece, y las que no cumplen ninguna («debajo de la línea») salen marcadas como tales.
+La norma manda sobre las cotas del modelo y sobre las de la lámina, y decide con qué posición de texto nace una cota nueva. En el mismo panel está el **Escalón de línea base**: la separación entre filas de una serie de [cotas desde línea base](../laminas/anotacion.md#cotas-desde-linea-base), el `DIMDLI` de AutoCAD. En el panel de la lámina, cada posición dice a qué norma pertenece, y las que no cumplen ninguna («debajo de la línea») salen marcadas como tales.
 
 ## Texto guía
 

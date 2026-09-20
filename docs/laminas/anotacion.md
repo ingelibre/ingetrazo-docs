@@ -54,7 +54,9 @@ La diferencia en una frase: la **cadena** pone los tramos uno tras otro sobre un
 
 Como en AutoCAD, **no hace falta volver a dar dos puntos y la separación**: **selecciona una cota** y arma Cadena o Línea base, y la serie **continúa desde ésa** — la cadena desde su segundo punto, la línea base desde el primero —, conservando su línea, su separación y si estaba forzada recta. A partir de ahí es **un clic por punto**.
 
-Sin nada seleccionado, la serie empieza de cero como siempre: dos puntos, la separación y a seguir.
+Sin nada seleccionado, la serie empieza de cero como siempre: dos puntos, la separación y a seguir. *(En AutoCAD `DIMCONTINUE` y `DIMBASELINE` **solo** continúan de una cota existente y nunca piden dos puntos; aquí se dejan las dos formas a propósito.)*
+
+El **escalón** entre filas de una serie desde línea base —el `DIMDLI` de AutoCAD— es un valor que fijas tú en **Estilo de cota ▸ Escalón de línea base** (por defecto 8 mm). Vive en el documento, así que un dibujo conserva el escalón con el que se trazó.
 
 ### La línea se prolonga bajo el texto
 
