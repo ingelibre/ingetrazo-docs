@@ -70,7 +70,7 @@ La herramienta **Cota angular**: clic en el **vértice**, clic en un punto de ca
 
 ### Cota de radio y de diámetro
 
-La herramienta **Cota de radio**: clic en el **centro** y clic en un punto del **arco**. Con **`Ctrl`** en ese segundo clic sale de **diámetro** en vez de radio; el desplegable *Tipo* del panel también la cambia después.
+La herramienta **Cota de radio**: haz clic **sobre el círculo o el arco** del dibujo y la cota toma el **centro y el radio por sí sola** — como en AutoCAD, no hace falta buscar un centro que el plano no marca; el punto donde haces clic decide por qué lado sale la línea, y al pasar el cursor por el arco ya ves en punteado la cota que va a colocar. Reconoce los círculos y arcos que el marco ve **de frente** (en planta, los horizontales; en una elevación, los verticales) — uno visto de canto es una línea y no tiene radio que acotar. Si haces clic donde no hay ningún arco, ese clic es el **centro** y el siguiente un punto del **arco**. Con **`Ctrl`** en el clic sale de **diámetro** en vez de radio; el desplegable *Tipo* del panel también la cambia después.
 
 Sigue la normativa de acotación:
 
