@@ -12,6 +12,17 @@ Estas son las anotaciones **dentro del modelo 3D**. Para las cotas sobre la hoja
 
 La cota queda **anclada a la geometría**: muestra la distancia real y vive en 3D con el modelo. El desplegable **Estilo de cota** de la barra de herramientas controla color, altura de texto, decimales y **unidades** (metros, centímetros, pulgadas, pies, y las fraccionarias `1 1/2"` — ver [medidas por teclado](dibujo.md#medidas-por-teclado-metros-centimetros-pulgadas-pies)). Las cotas se seleccionan, se mueven con su ancla clavada, se borran con `Supr` y salen en los [marcos de las láminas](../laminas/marcos.md#extras-del-marco) si activas «Anotaciones del modelo».
 
+### Norma de acotación
+
+El mismo panel tiene **Norma**, y es una propiedad **del documento**: viaja dentro del `.igz`, así que un dibujo conserva la norma con la que se trazó aunque lo abra otra persona con otra configuración.
+
+- **ISO / UNE** (por defecto) — el texto va **encima** de la línea de cota y **la línea no se interrumpe nunca**.
+- **Alemana / japonesa** — la línea se interrumpe y el texto va **en medio** del hueco.
+
+En las dos, el texto se orienta para leerse girando la cabeza a la **izquierda**: una cota vertical se lee de abajo arriba, la dibujes hacia arriba o hacia abajo.
+
+La norma manda sobre las cotas del modelo y sobre las de la lámina, y decide con qué posición de texto nace una cota nueva. En el panel de la lámina, cada posición dice a qué norma pertenece, y las que no cumplen ninguna («debajo de la línea») salen marcadas como tales.
+
 ## Texto guía
 
 La herramienta **Texto** (`X`) coloca etiquetas con línea guía apuntando a una cara o arista — nombres de ambientes, notas de obra. El texto siempre mira a la cámara; se mueve con su ancla clavada, se edita con doble clic y viaja al `.skp`. Cotas y textos guía pueden vivir en una **capa**: apaga «Cotas» y desaparecen de la vista y de las láminas que no las quieren.
