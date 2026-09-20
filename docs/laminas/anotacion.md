@@ -5,10 +5,18 @@
 La herramienta **Cota** del compositor acota sobre el dibujo del marco:
 
 1. **Clic en el primer punto** — sobre un vértice o arista del dibujo aparece el **punto verde**: el snap engancha la geometría real visible del marco.
-2. **Clic en el segundo punto** (también en verde). Con **`Mayús`** el segundo punto queda **en horizontal o vertical** respecto del primero (gana el eje más cercano al cursor; el imán sigue actuando sobre ese eje).
+2. **Clic en el segundo punto** (también en verde).
 3. **Mueve y tercer clic** para separar la línea de cota del dibujo — con sus líneas de extensión, como manda el dibujo técnico.
 
 La herramienta **sigue activa** para la cota siguiente; `Esc` (con nada a medias) o el cursor la dejan.
+
+### Cota forzada recta (`Mayús`)
+
+Dos puntos que **no están alineados** dan, por defecto, una cota inclinada: mide la distancia entre ellos, que es lo que pide una cota alineada. Pero muchas veces lo que quieres es **la altura** o **el ancho** entre esos dos puntos, y entonces la cota tiene que salir recta.
+
+**`Mayús`** en cualquier momento del gesto la fuerza recta: elige el eje en el que los dos puntos están más separados, **no mueve los puntos** —cada uno se queda donde enganchó— y la cota mide solo esa parte, con **líneas de referencia de distinta longitud** llegando a cada punto. Es la cota lineal de AutoCAD.
+
+No hace falta acertar con el momento: la elección **se queda** hasta que colocas la cota, y después el desplegable **Dirección** del panel (*Alineada con los dos puntos* / *Forzada horizontal* / *Forzada vertical*) la cambia en cualquier cota ya dibujada, con deshacer.
 
 ### Cotas ancladas al modelo
 
@@ -33,6 +41,8 @@ La herramienta **Cotas en cadena** (junto a la cota) acota varios tramos seguido
 2. Tercer clic para fijar la separación de la línea.
 3. Cada clic siguiente añade el siguiente tramo sobre la misma línea (con un quiebre, el tramo nuevo se acomoda para pasar por la línea de la cadena).
 4. Clic sobre el último punto, `Esc` o cambiar de herramienta termina la cadena y apila la **cota total** una fila más afuera (con dos tramos o más; `Ctrl+Z` la quita si sobra).
+
+`Mayús` **fuerza recta la cadena entera**: todos los tramos miden solo su parte horizontal (o vertical) y comparten una única línea de cota, aunque los puntos estén a alturas distintas. La cota total sale forzada igual.
 
 Los puntos enganchados en verde anclan cada tramo al modelo, como una cota normal.
 
