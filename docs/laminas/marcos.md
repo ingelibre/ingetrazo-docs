@@ -8,6 +8,7 @@ Con la herramienta **Marco** dibuja el rectángulo sobre la hoja (dos clics o ar
 
 - **Vista**: la cámara actual, una **vista estándar** (planta, frontal, laterales, isométrica…) o cualquiera de tus **escenas guardadas** — una escena «Planta primer piso» con sus capas, su sección y su estilo configurados es tu plano listo.
 - **Escala 1:N**: la ecuación sagrada del compositor — *1:100 en un marco de 200 mm de alto muestra exactamente 20 m de modelo*. Siempre, sin aproximaciones. Cambias la escala y el contenido se reencuadra exacto. El combo trae las escalas usuales y acepta cualquier otra.
+- **Escalas de ampliación**: para piezas pequeñas el combo trae también **2:1, 5:1 y 10:1**, y acepta que las escribas así. La lámina las rotula como corresponde («ESC. 10:1»), igual que el campo `{escala}` del cajetín.
 - **Tamaño del marco** en mm, por arrastre o numérico; **Encuadrar modelo** centra la vista en todo el modelo.
 - **Borde impreso** del marco: grosor y color, o ninguno.
 

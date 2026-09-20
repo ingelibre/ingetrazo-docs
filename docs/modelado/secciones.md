@@ -7,7 +7,9 @@ Un **plano de sección** corta el modelo para mirar adentro — la planta de una
 1. **Herramientas ▸ Plano de sección** (también en la barra de herramientas).
 2. Mueve el cursor sobre el modelo: el plano se **alinea solo** con la cara que tienes debajo (o con el suelo).
 3. Para fijar la orientación sin depender de la cara: las **flechas del teclado** bloquean el eje — `↑` corta horizontal (plano Z), `→` vertical según X, `←` vertical según Y, `↓` vuelve a la cara — y `Mayús` congela la inferencia actual. El plano mira siempre hacia la cámara: colocado delante del modelo, lo que se oculta es lo que está de tu lado.
-4. **Clic** para colocarlo. Se te pide un **nombre** y un **símbolo** (la letra que saldrá en las láminas: A, B…). Puedes dejar los que propone.
+4. **Clic** para colocarlo. Se te pide un **nombre** y un **símbolo** (la letra que saldrá en las láminas: A, B…). Puedes dejar los que propone: el símbolo es la **siguiente letra libre**, así que los cortes salen A, B, C… y la marca de la lámina se lee «A … A», como manda el dibujo técnico.
+
+Para cambiarlos después, clic derecho sobre el plano de sección ▸ **Nombre y símbolo…**.
 
 El plano recién colocado queda **activo** y corta de inmediato.
 
