@@ -50,6 +50,12 @@ La herramienta **Cotas desde línea base** es la hermana de la cadena: se usa ig
 
 La diferencia en una frase: la **cadena** pone los tramos uno tras otro sobre una sola línea; la **línea base** pone las distancias acumuladas, escalonadas. Las dos aceptan `Mayús` para salir rectas, y las dos terminan con clic en el último punto o `Esc`. La cadena apila además su **cota total**; la de línea base no la necesita, porque su última cota ya va de la base al punto más lejano.
 
+#### Continuar desde una cota que ya existe
+
+Como en AutoCAD, **no hace falta volver a dar dos puntos y la separación**: **selecciona una cota** y arma Cadena o Línea base, y la serie **continúa desde ésa** — la cadena desde su segundo punto, la línea base desde el primero —, conservando su línea, su separación y si estaba forzada recta. A partir de ahí es **un clic por punto**.
+
+Sin nada seleccionado, la serie empieza de cero como siempre: dos puntos, la separación y a seguir.
+
 ### La línea se prolonga bajo el texto
 
 Cuando el texto va **fuera del inicio o del final** (*A lo largo de la línea* en el panel), la línea de cota **se prolonga hasta cubrirlo**, como manda la normativa: si cambias el texto por uno más largo, la línea crece con él. Si arrastras el texto a mano, la línea se queda donde está — ahí mandas tú.
