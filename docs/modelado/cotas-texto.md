@@ -10,7 +10,11 @@ Estas son las anotaciones **dentro del modelo 3D**. Para las cotas sobre la hoja
 2. Clic en el segundo punto.
 3. Mueve para separar la línea de cota del modelo y clic para fijarla.
 
-La cota queda **anclada a la geometría**: muestra la distancia real y vive en 3D con el modelo. El desplegable **Estilo de cota** de la barra de herramientas controla color, altura de texto, decimales y **unidades** (metros, centímetros, pulgadas, pies, y las fraccionarias `1 1/2"` — ver [medidas por teclado](dibujo.md#medidas-por-teclado-metros-centimetros-pulgadas-pies)). Las cotas se seleccionan, se mueven con su ancla clavada, se borran con `Supr` y salen en los [marcos de las láminas](../laminas/marcos.md#extras-del-marco) si activas «Anotaciones del modelo».
+La cota queda **anclada a la geometría**: cada extremo que cae sobre un vértice se agarra a él, así que si luego **escalas, mueves o estiras** el dibujo, la cota se va con él y **vuelve a medir** — no se queda flotando con la medida vieja. Un extremo dentro de un componente sigue a la instancia. Si el vértice desaparece (lo borras), el extremo se queda donde estaba. Un extremo puesto en un punto medio o sobre una arista no tiene vértice al que agarrarse y se queda fijo.
+
+Con **Mover** (`M`) sobre una cota, la **línea de cota se desplaza** y las líneas de referencia se estiran desde sus vértices, como en SketchUp; si la seleccionas junto con la geometría, viaja con ella.
+
+El desplegable **Estilo de cota** de la barra de herramientas controla color, altura de texto, decimales, **unidades** (metros, centímetros, pulgadas, pies, y las fraccionarias `1 1/2"` — ver [medidas por teclado](dibujo.md#medidas-por-teclado-metros-centimetros-pulgadas-pies)) y los **extremos**: flechas (lo que trae un documento nuevo), trazos oblicuos o ninguno — un documento anterior conserva sus trazos. Las cotas se seleccionan, se borran con `Supr` y salen en los [marcos de las láminas](../laminas/marcos.md#extras-del-marco) si activas «Anotaciones del modelo», con los mismos extremos.
 
 ### Norma de acotación
 
