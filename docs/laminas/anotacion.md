@@ -44,6 +44,16 @@ La herramienta **Cotas en cadena** (junto a la cota) acota varios tramos seguido
 
 `Mayús` **fuerza recta la cadena entera**: todos los tramos miden solo su parte horizontal (o vertical) y comparten una única línea de cota, aunque los puntos estén a alturas distintas. La cota total sale forzada igual.
 
+### Cotas desde línea base
+
+La herramienta **Cotas desde línea base** es la hermana de la cadena: se usa igual —dos puntos, la separación, y luego un clic por punto— pero **todas las cotas miden desde el PRIMER punto**, y cada una se apila **una fila más afuera**. Es la acotación acumulada de toda la vida: distancias desde una esquina o desde un eje.
+
+La diferencia en una frase: la **cadena** pone los tramos uno tras otro sobre una sola línea; la **línea base** pone las distancias acumuladas, escalonadas. Las dos aceptan `Mayús` para salir rectas, y las dos terminan con clic en el último punto o `Esc`. La cadena apila además su **cota total**; la de línea base no la necesita, porque su última cota ya va de la base al punto más lejano.
+
+### La línea se prolonga bajo el texto
+
+Cuando el texto va **fuera del inicio o del final** (*A lo largo de la línea* en el panel), la línea de cota **se prolonga hasta cubrirlo**, como manda la normativa: si cambias el texto por uno más largo, la línea crece con él. Si arrastras el texto a mano, la línea se queda donde está — ahí mandas tú.
+
 Los puntos enganchados en verde anclan cada tramo al modelo, como una cota normal.
 
 ### Cota angular
