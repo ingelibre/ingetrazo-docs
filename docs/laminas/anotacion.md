@@ -29,9 +29,9 @@ Si ambos puntos engancharon en verde, la cota queda **anclada a los puntos 3D de
 
 ### Estilo de cota
 
-En sus propiedades: **separación**, **altura de texto**, **decimales**, **unidades** (m, cm, mm, pulgadas, pies, pies-pulgadas y sus fraccionarias), extremos (**trazos oblicuos**, flechas o ninguno), grosor, color, fondo del texto y texto manual si quieres reemplazar la medida. El agarre central de la línea permite reacomodar la separación cuando quieras.
+En sus propiedades: **separación**, **altura de texto**, **decimales**, **unidades** (m, cm, mm, pulgadas, pies, pies-pulgadas y sus fraccionarias), extremos (**flechas**, como manda la norma; trazos oblicuos o ninguno si lo prefieres), grosor, color, fondo del texto y texto manual si quieres reemplazar la medida. El agarre central de la línea permite reacomodar la separación cuando quieras.
 
-**Dónde va el texto**: siempre **encima** de la línea de cota, como manda la norma ISO (*Posición del texto* no ofrece otra cosa por ahora); *A lo largo de la línea* lo lleva **sobre el centro**, **fuera del inicio** o **fuera del final** (el texto al lado de la cota, a izquierda o derecha). Y como en LayOut, **el texto se arrastra con el ratón** agarrándolo por las letras y se queda donde lo dejes, mientras la línea no se mueve; **Devolver el texto a su sitio** deshace el arrastre. **El estilo de la última cota que editaste es el de las nuevas**, y se recuerda entre sesiones.
+**Dónde va el texto**: siempre **encima** de la línea de cota, como manda la norma ISO (*Posición del texto* no ofrece otra cosa por ahora); *A lo largo de la línea* lo lleva **sobre el centro**, **fuera del inicio** o **fuera del final** (el texto al lado de la cota, a izquierda o derecha). Y como en LayOut, **el texto se arrastra con el ratón** agarrándolo por las letras y se queda donde lo dejes, mientras la línea no se mueve; **Devolver el texto a su sitio** deshace el arrastre. **El estilo de la última cota que editaste es el de las nuevas**, y se recuerda entre sesiones — el aspecto (extremos, altura, color, fondo…), no dónde pusiste el texto: cada cota nueva nace con el número **sobre el centro** de su línea.
 
 ### Cotas en cadena
 
