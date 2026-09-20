@@ -31,7 +31,7 @@ Si ambos puntos engancharon en verde, la cota queda **anclada a los puntos 3D de
 
 En sus propiedades: **separación**, **altura de texto**, **decimales**, **unidades** (m, cm, mm, pulgadas, pies, pies-pulgadas y sus fraccionarias), extremos (**trazos oblicuos**, flechas o ninguno), grosor, color, fondo del texto y texto manual si quieres reemplazar la medida. El agarre central de la línea permite reacomodar la separación cuando quieras.
 
-**Dónde va el texto**: *Posición del texto* lo pone **encima**, **centrado** (la línea se abre alrededor), **debajo**, **al costado de la línea** o **al otro costado** (la etiqueta entera a un lado, sin cruzar la línea — lo que quieres en una cota vertical con texto horizontal); *A lo largo de la línea* lo lleva **sobre el centro**, **fuera del inicio** o **fuera del final** (el texto al lado de la cota, a izquierda o derecha). Y como en LayOut, **el texto se arrastra con el ratón** agarrándolo por las letras y se queda donde lo dejes, mientras la línea no se mueve; **Devolver el texto a su sitio** deshace el arrastre. **El estilo de la última cota que editaste es el de las nuevas**, y se recuerda entre sesiones.
+**Dónde va el texto**: siempre **encima** de la línea de cota, como manda la norma ISO (*Posición del texto* no ofrece otra cosa por ahora); *A lo largo de la línea* lo lleva **sobre el centro**, **fuera del inicio** o **fuera del final** (el texto al lado de la cota, a izquierda o derecha). Y como en LayOut, **el texto se arrastra con el ratón** agarrándolo por las letras y se queda donde lo dejes, mientras la línea no se mueve; **Devolver el texto a su sitio** deshace el arrastre. **El estilo de la última cota que editaste es el de las nuevas**, y se recuerda entre sesiones.
 
 ### Cotas en cadena
 
@@ -78,7 +78,7 @@ Sigue la normativa de acotación:
 - El **símbolo acompaña al valor**: `R` o `Ø`.
 - El texto va **encima** de la línea y nunca queda cabeza abajo, esté el radio en el cuadrante que esté.
 - Si las letras y las flechas **caben**, van dentro y las flechas apuntan hacia fuera, al arco. Si **no caben**, la línea se prolonga fuera, el texto va sobre esa prolongación y las flechas apuntan **hacia el centro**. *Posición del texto* deja forzarlo (Automática / Dentro / Fuera).
-- En un diámetro el número no se pone sobre el centro, que es donde van los ejes: se corre a la mitad de fuera.
+- En un diámetro el número no se pone sobre el centro, que es donde van los ejes: se corre a la mitad **derecha** de la línea, se haya trazado hacia donde se haya trazado (en un diámetro vertical, a la mitad de arriba, que es hacia donde se lee).
 
 Un **arco** se acota igual que un círculo. La **marca de centro** (la crucecita) se puede quitar en el panel, y el agarre del extremo del arco gira y redimensiona la cota.
 

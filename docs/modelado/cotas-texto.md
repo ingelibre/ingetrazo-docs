@@ -14,14 +14,9 @@ La cota queda **anclada a la geometría**: muestra la distancia real y vive en 3
 
 ### Norma de acotación
 
-El mismo panel tiene **Norma**, y es una propiedad **del documento**: viaja dentro del `.igz`, así que un dibujo conserva la norma con la que se trazó aunque lo abra otra persona con otra configuración.
+Las cotas siguen la norma **ISO / UNE**: el texto va **encima** de la línea de cota, centrado a lo largo de ella, y **la línea no se interrumpe nunca**. El texto se orienta para leerse girando la cabeza a la **izquierda**: una cota vertical se lee de abajo arriba, la dibujes hacia arriba o hacia abajo. Es la única norma disponible por ahora (la alemana/japonesa, con la línea partida y el texto en medio, queda para una versión futura).
 
-- **ISO / UNE** (por defecto) — el texto va **encima** de la línea de cota y **la línea no se interrumpe nunca**.
-- **Alemana / japonesa** — la línea se interrumpe y el texto va **en medio** del hueco.
-
-En las dos, el texto se orienta para leerse girando la cabeza a la **izquierda**: una cota vertical se lee de abajo arriba, la dibujes hacia arriba o hacia abajo.
-
-La norma manda sobre las cotas del modelo y sobre las de la lámina, y decide con qué posición de texto nace una cota nueva. En el mismo panel está el **Escalón de línea base**: la separación entre filas de una serie de [cotas desde línea base](../laminas/anotacion.md#cotas-desde-linea-base), el `DIMDLI` de AutoCAD. En el panel de la lámina, cada posición dice a qué norma pertenece, y las que no cumplen ninguna («debajo de la línea») salen marcadas como tales.
+En el mismo panel está el **Escalón de línea base**: la separación entre filas de una serie de [cotas desde línea base](../laminas/anotacion.md#cotas-desde-linea-base), el `DIMDLI` de AutoCAD.
 
 ## Texto guía
 
