@@ -48,13 +48,29 @@ Los puntos enganchados en verde anclan cada tramo al modelo, como una cota norma
 
 ### Cota angular
 
-La herramienta **Cota angular**: clic en el **vértice**, clic en un punto de cada lado y un cuarto clic para el **radio del arco**. Mide el ángulo real (anclada, si engancha en verde), con su arco, sus flechas y el texto alineado o recto.
+La herramienta **Cota angular**: clic en el **vértice**, clic en un punto de cada lado y un cuarto clic para el **radio del arco**. Mide el ángulo real, con su arco, sus flechas y el texto alineado o recto. Los tres primeros clics **enganchan a la geometría** del marco (punto verde), y con **`Mayús`** el brazo cae en un múltiplo exacto de 15°: el primero desde la horizontal de la hoja y el segundo **desde el primer brazo**, así que el ángulo medido sale redondo — 90°, 45°, 30°.
+
+### Cota de radio y de diámetro
+
+La herramienta **Cota de radio**: clic en el **centro** y clic en un punto del **arco**. Con **`Ctrl`** en ese segundo clic sale de **diámetro** en vez de radio; el desplegable *Tipo* del panel también la cambia después.
+
+Sigue la normativa de acotación:
+
+- La línea **siempre llega al centro**: el radio parte de él y el diámetro lo atraviesa. Una guía que se quede a medio camino no cumple.
+- El **símbolo acompaña al valor**: `R` o `Ø`.
+- El texto va **encima** de la línea y nunca queda cabeza abajo, esté el radio en el cuadrante que esté.
+- Si las letras y las flechas **caben**, van dentro y las flechas apuntan hacia fuera, al arco. Si **no caben**, la línea se prolonga fuera, el texto va sobre esa prolongación y las flechas apuntan **hacia el centro**. *Posición del texto* deja forzarlo (Automática / Dentro / Fuera).
+- En un diámetro el número no se pone sobre el centro, que es donde van los ejes: se corre a la mitad de fuera.
+
+Un **arco** se acota igual que un círculo. La **marca de centro** (la crucecita) se puede quitar en el panel, y el agarre del extremo del arco gira y redimensiona la cota.
 
 ## Cotas de nivel
 
 La herramienta **Nivel** pone la marca de nivel con un clic sobre un punto de una vista: lee la **altura del punto** y escribe «N.P.T. +0.15» junto al símbolo — triángulo sobre su vértice en secciones y elevaciones, círculo en cuadrantes en plantas (el marco de planta lo elige solo). Anclada al modelo, sigue al punto si la geometría cambia y actualiza la altura; se puede deslizar por la lámina y queda una guía fina hasta el punto.
 
-En sus propiedades: **texto** con `{z}` (o sin él: el nivel se añade al final), **nivel de referencia** (la altura del modelo que se lee como ±0.00), decimales, símbolo, tamaño, largo de la línea de nivel, lado, grosor y color. Un clic fuera de la geometría pone una cota libre con el nivel que escribas.
+En una **elevación o una sección** no hace falta ni enganchar: las filas de la hoja SON las alturas del modelo, así que un clic en cualquier sitio del marco ya sabe a qué altura está y escribe esa. Una **planta** mira hacia abajo y no puede decirlo: ahí el nivel sale del punto enganchado, o lo escribes tú.
+
+En sus propiedades: **texto** con `{z}` (o sin él: el nivel se añade al final), **nivel de referencia** (la altura del modelo que se lee como ±0.00), decimales, símbolo, tamaño, largo de la línea de nivel, lado, grosor y color.
 
 ## Etiquetas con guía
 
