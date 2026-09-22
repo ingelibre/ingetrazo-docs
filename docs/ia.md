@@ -9,7 +9,7 @@ IngeTrazo tiene dos maneras de dejar que una inteligencia artificial modele por 
 
 | | Asistente IA (dentro de la app) | Puente MCP (desde un agente externo) |
 |---|---|---|
-| Dónde | **Extensiones ▸ Asistente IA** (`Ctrl+Mayús+A`) | **Extensiones ▸ Puente IA (MCP)** + cualquier cliente MCP: Claude Code, Claude Desktop, Cursor, VS Code, Gemini CLI, Codex CLI… |
+| Dónde | **Extensiones ▸ Asistente IA** (`Ctrl+Mayús+A`) | **Extensiones ▸ Puente IA (MCP)** + cualquier cliente MCP: Claude Code, Claude Desktop, Cursor, VS Code, Antigravity CLI (Google), Codex CLI… |
 | Qué necesitas | Una clave API del proveedor que elijas (Groq tiene cuota gratis) u Ollama local | Un cliente MCP instalado (con su propia cuenta o clave) |
 | Cómo hablas | Chat en español dentro de IngeTrazo, con foto opcional | Conversación en tu agente; él dibuja en la app abierta |
 | Quién ve el modelo | El asistente recibe capturas del viewport (opcional) | El agente pide capturas y consulta el modelo cuando quiere |
@@ -50,7 +50,7 @@ IngeTrazo tiene dos maneras de dejar que una inteligencia artificial modele por 
 
 ![Escritorio Ubuntu completo: Claude Code en la terminal, a la izquierda, lista las medidas de la mesa con cuatro sillas que acaba de dibujar por el puente; IngeTrazo, a la derecha, muestra el modelo y el diálogo Puente IA (MCP) con la línea de conexión.](images/mcp-claude.jpeg)
 
-El [Model Context Protocol](https://modelcontextprotocol.io) es un **estándar abierto**, no algo de Claude: cualquier agente que hable MCP —Claude Code, Claude Desktop, Cursor, VS Code con Copilot, Windsurf, Gemini CLI, Codex CLI…— puede operar IngeTrazo **en vivo, con la app abierta**: dibuja, consulta y mira el modelo, y cada acción suya es un paso de deshacer. IngeTrazo no elige ni paga el modelo: eso lo pone tu cliente.
+El [Model Context Protocol](https://modelcontextprotocol.io) es un **estándar abierto**, no algo de Claude: cualquier agente que hable MCP —Claude Code, Claude Desktop, Cursor, VS Code con Copilot, Windsurf, Antigravity CLI de Google, Codex CLI…— puede operar IngeTrazo **en vivo, con la app abierta**: dibuja, consulta y mira el modelo, y cada acción suya es un paso de deshacer. IngeTrazo no elige ni paga el modelo: eso lo pone tu cliente.
 
 1. **Enciende el puente**: **Extensiones ▸ Puente IA (MCP)**. IngeTrazo arranca un servidor local (solo en `127.0.0.1`, puerto 4763) y abre una ventana con las líneas exactas para tu sistema, con botón **Copiar**. El mismo menú lo apaga.
 2. **Conecta tu cliente** — una sola vez:
@@ -92,7 +92,7 @@ El [Model Context Protocol](https://modelcontextprotocol.io) es un **estándar a
         | Cursor | `~/.cursor/mcp.json` (o Ajustes ▸ MCP ▸ *Add new server*) |
         | VS Code (Copilot) | `.vscode/mcp.json` del proyecto, con la clave `servers` en vez de `mcpServers` |
         | Windsurf | `~/.codeium/windsurf/mcp_config.json` |
-        | Gemini CLI | `~/.gemini/settings.json` |
+        | Antigravity CLI (Google) | `~/.gemini/config/mcp_config.json` (o `.agents/mcp_config.json` en la carpeta del proyecto). Es el sucesor de Gemini CLI: Google cerró el acceso gratuito con cuenta de Google a Gemini CLI el 18-06-2026 y con esta cuenta ya no entra; Antigravity tiene un plan **Individual gratis** con límites semanales. Se instala con `curl -fsSL https://antigravity.google/cli/install.sh \| bash` y el comando es `agy`. |
         | Codex CLI | `~/.codex/config.toml`, sección `[mcp_servers.ingetrazo]` con `command` y `args` |
 
         En todos, `command` es el ejecutable de IngeTrazo con `--mcp` (o `ingetrazo-mcp.exe` en Windows), tal como lo muestra la ventana del puente.
