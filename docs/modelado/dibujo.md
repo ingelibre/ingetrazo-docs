@@ -7,7 +7,7 @@ Todas comparten el mismo lenguaje: clic para empezar, las **inferencias** te eng
 | Herramienta | Atajo | Cómo se usa |
 |---|---|---|
 | **Línea** | `L` | Clic a clic; teclea la longitud para el tramo exacto. Cierra un contorno y la cara se crea sola. |
-| **Rectángulo** | `R` | Dos esquinas; teclea `ancho,alto` (ej. `6,4`). |
+| **Rectángulo** | `R` | Dos esquinas; teclea `ancho,alto` (ej. `6,4`). **`Ctrl`** alterna a **desde el centro** (centro y una esquina, como en SketchUp): el sello del lápiz cambia, y el `ancho,alto` tecleado es el tamaño **completo**. Al volver a coger la herramienta arranca desde la esquina. |
 | **Rectángulo rotado** | `K` | Primero la base (dos puntos), luego el alto. |
 | **Círculo** | `C` | Centro y radio; teclea el radio. |
 | **Polígono** | — | Centro y radio; teclea el número de lados (la `G` es Crear componente, como en SketchUp). |
@@ -26,7 +26,7 @@ Todas comparten el mismo lenguaje: clic para empezar, las **inferencias** te eng
 
 | Herramienta | Atajo | Cómo se usa |
 |---|---|---|
-| **Equidistancia (Offset)** | `F` | Copia el contorno de una cara hacia adentro o afuera, a distancia exacta. El clásico para espesores de muro. |
+| **Equidistancia (Offset)** | `F` | Copia el contorno de una cara hacia adentro o afuera, a distancia exacta. El clásico para espesores de muro. También funciona con **aristas**: clic sobre una arista suelta y desfasa toda su cadena conectada (abierta o cerrada), o preselecciona las aristas que quieras y haz clic en una de ellas. |
 | **Sígueme (Follow me)** | `W` | Extruye un perfil a lo largo de un camino: molduras, tuberías, sardineles. |
 | **Texto 3D** | — | Dibujo ▸ Texto 3D: letras con volumen real (fuente, negrita, cursiva, altura y espesor), listas para extruir o pintar. |
 
@@ -40,7 +40,7 @@ Como en SketchUp, dibuja el perfil **perpendicular al camino** (lo más fácil: 
 
 ## Medidas por teclado: metros, centímetros, pulgadas, pies
 
-Los números sin sufijo son **metros**. Cada campo puede llevar su propia unidad, así que puedes dibujar la madera o la tubería en pulgadas y las luces en metros dentro del mismo modelo:
+Los números sin sufijo están en la **unidad del documento** (metros salvo que la cambies en [Preferencias ▸ Unidades](../preferencias.md#unidades): en un documento en milímetros, `500` es medio metro). Cada campo puede llevar su propia unidad, así que puedes dibujar la madera o la tubería en pulgadas y las luces en metros dentro del mismo modelo:
 
 | Escribes | Vale |
 |---|---|
@@ -75,7 +75,7 @@ Los puntos de colores mientras dibujas:
 
 - **Verde** — extremo de arista.
 - **Cian** — punto medio.
-- **Rojo/verde/azul** — sobre un eje del sistema (X este, Y norte, Z vertical).
+- **Rojo/verde/azul** — sobre un eje del sistema (X este, Y norte, Z vertical). El **imán de ejes** (un trazo a pocos grados de un eje cae sobre él) lo tienen todas las herramientas que trazan: Línea, Arco, Círculo, Polígono, Rectángulo rotado, Cinta, Transportador, Cota, Texto y Mover.
 - **Magenta** — paralela o perpendicular a una arista existente.
 
 Mantén el mouse un instante sobre un punto para "memorizarlo" y proyectar desde él: al alinearte con él por un eje aparece una línea punteada desde el punto (**Desde el punto**).

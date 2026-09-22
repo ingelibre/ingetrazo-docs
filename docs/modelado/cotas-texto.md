@@ -8,7 +8,7 @@ Estas son las anotaciones **dentro del modelo 3D**. Para las cotas sobre la hoja
 
 1. Clic en el primer punto (las inferencias enganchan extremos y puntos medios).
 2. Clic en el segundo punto.
-3. Mueve para separar la línea de cota del modelo y clic para fijarla.
+3. Mueve para separar la línea de cota del modelo y clic para fijarla. Si separas la cota **más allá de un extremo**, en la dirección de un eje, se vuelve **lineal** (mide la proyección sobre ese eje, la «linear» de SketchUp); si la separas en escuadra, queda **alineada** (mide la distancia real). La barra de estado dice cuál es.
 
 La cota queda **anclada a la geometría**: cada extremo que cae sobre un vértice se agarra a él, así que si luego **escalas, mueves o estiras** el dibujo, la cota se va con él y **vuelve a medir** — no se queda flotando con la medida vieja. Un extremo dentro de un componente sigue a la instancia. Si el vértice desaparece (lo borras), el extremo se queda donde estaba. Un extremo puesto en un punto medio o sobre una arista no tiene vértice al que agarrarse y se queda fijo.
 
@@ -32,6 +32,6 @@ Dibujo ▸ **Texto 3D** genera letras con geometría real (extruibles, pintables
 
 ## Cinta métrica y transportador
 
-- **Cinta** (`T`): mide y deja **guías** punteadas de construcción (líneas infinitas o puntos guía). Tiene el mismo imán de ejes que la Línea: una medida a pocos grados de un eje cae sobre él, con su color.
+- **Cinta** (`T`): mide y deja **guías** punteadas de construcción. Desde una arista o desde un **eje** del sistema (clic sobre el eje, y vale con el documento vacío: así se sitúa un proyecto «a 20 m y a 5 m del origen» antes de dibujar nada), una guía paralela a la distancia arrastrada o tecleada; desde un **punto con nombre** (extremo, centro, intersección, origen), un **punto guía con su segmento** discontinuo hasta el punto de partida, el «segmento guía» de SketchUp para centrar un círculo o marcar el vuelo de un alero; de punto a punto solo mide (un punto medio no cuenta como punto). Tiene el mismo imán de ejes que la Línea: una medida a pocos grados de un eje cae sobre él, con su color.
 - **Transportador** (`Mayús+H`): guías angulares; sus brazos también se imantan a los ejes que están en el plano del disco.
 - Las guías no son geometría: no salen en exports ni metrados, y se limpian con Edición ▸ Eliminar guías.

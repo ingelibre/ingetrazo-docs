@@ -2,7 +2,7 @@
 
 ## Capas
 
-El panel **Capas** de la bandeja organiza la visibilidad del modelo:
+El panel **Capas** de la bandeja organiza la visibilidad del modelo (la lista crece hasta 12 filas y de ahí en adelante se desplaza ella sola, igual que la de Componentes):
 
 - **+ Capa** crea una; el selector de cada entidad (o el panel Info de entidad) la asigna.
 - El **ojo** muestra/oculta todo lo que vive en la capa — muebles, referencias, instalaciones.

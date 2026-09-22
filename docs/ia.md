@@ -31,7 +31,7 @@ IngeTrazo tiene dos maneras de dejar que una inteligencia artificial modele por 
     | **DeepSeek** | platform.deepseek.com | — | Barato. |
     | **Ollama** | *(sin clave)* | según el modelo | **En tu propia máquina, sin internet.** Instala Ollama y deja la clave vacía; la URL por defecto es `http://localhost:11434`. |
 
-3. **Clave API.** Pégala en el campo. Se guarda en tu perfil de usuario, nunca en el documento. El enlace bajo el campo te lleva a la página donde se obtiene.
+3. **Clave API.** Pégala en el campo. Se guarda en tu perfil de usuario, nunca en el documento. El enlace bajo el campo te lleva a la página donde se obtiene. **Sin clave no hay respuesta** (Groq es gratis, pero pide clave): si la dejas vacía o el proveedor la rechaza, el asistente lo dice en claro con el enlace para conseguirla, en vez de un error 401 crudo.
 4. **Modelo.** Vacío = el modelo por defecto del proveedor. **Modelos** lista los que tu clave puede usar de verdad; **Probar conexión** valida la clave antes de empezar.
 5. **Enviar capturas del viewport al modelo.** Con un proveedor que *ve* (Claude, GPT, Gemini), después de cada paso el asistente recibe una imagen de lo que construyó, la mira y corrige solo. Con un modelo sin visión la casilla no hace daño: la imagen simplemente no se manda.
 6. **Escribe el pedido y Enter.** Con medidas: *«dibuja una pileta circular de 4 m de diámetro y 0,6 m de alto, borde de 20 cm»*. El asistente contesta, muestra la receta que va a ejecutar y el resultado aparece en el modelo. Sigue la conversación para corregir: *«hazla 20 cm más alta»*, *«píntala de piedra»*.

@@ -44,9 +44,18 @@ La caja de selección usa los mismos modificadores, y toma también grupos, comp
 | Herramienta | Atajo | Notas |
 |---|---|---|
 | **Borrador** | `E` | Clic o arrastre sobre aristas. Borrar la arista disuelve las caras que dependían de ella. **`Mayús` + Borrador oculta** el trazo en lugar de borrarlo. |
-| **Medir** (cinta métrica) | `T` | Mide entre dos puntos y crea **guías** de construcción. |
+| **Medir** (cinta métrica) | `T` | Mide entre dos puntos y crea **guías** de construcción: desde una arista, una guía paralela; desde un **eje** (clic sobre el eje rojo, verde o azul, con el documento vacío también), una guía paralela al eje a la distancia que teclees; desde un **punto con nombre** (extremo, centro, intersección, origen), un **punto guía con su segmento** discontinuo hasta el punto de partida. |
 | **Transportador** | `Mayús+H` | Mide ángulos y crea guías angulares. |
 | **Eliminar guías** | — | Edición ▸ Eliminar guías, cuando ya cumplieron su función. |
+
+## Dividir
+
+Clic derecho sobre una línea o un arco ▸ **Dividir…** y el número de segmentos (el Divide de SketchUp):
+
+- Una **línea** se parte en N trozos iguales, con un vértice en cada corte listo para enganchar.
+- Un **arco o círculo** se mide a lo largo de su cadena y queda en **N arcos independientes**, cada uno seleccionable por su cuenta: un círculo dividido en cuatro son cuatro cuartos.
+- Las caras que bordean la arista reciben los vértices nuevos sin romperse.
+- Con varias aristas seleccionadas se dividen todas; un solo `Ctrl+Z` lo deshace.
 
 ## Ocultar aristas
 
@@ -54,7 +63,7 @@ Para que una superficie hecha de varias caras se vea continua sin borrar nada:
 
 - Selecciona las aristas y **Edición ▸ Ocultar aristas** (o clic derecho ▸ Ocultar aristas), o pasa el Borrador con `Mayús`.
 - **Edición ▸ Mostrar todas las aristas** las devuelve (todas las del contexto en que estás: fuera de un grupo, las sueltas; dentro, las del grupo).
-- Una arista oculta no se puede clicar hasta mostrarla; las láminas y los exports la respetan.
+- Una arista oculta no se puede clicar hasta mostrarla; las láminas y los exports la respetan. Con **Ver ▸ Geometría oculta** (o **Objetos ocultos**) encendido, lo oculto se dibuja como fantasma y **se puede clicar y seleccionar** como cualquier otra cosa; al apagar la vista, sale de la selección.
 
 ## Grupos y componentes
 
@@ -66,4 +75,4 @@ Para que una superficie hecha de varias caras se vea continua sin borrar nada:
 
 ## Deshacer
 
-`Ctrl+Z` / `Ctrl+Mayús+Z` (o `Ctrl+Y`). **Toda** operación pasa por el historial — puedes retroceder siempre, incluso importaciones completas y lo que dibuja la [IA](../ia.md).
+`Ctrl+Z` / `Ctrl+Mayús+Z` (o `Ctrl+Y`). **Toda** operación pasa por el historial — puedes retroceder siempre, incluso importaciones completas y lo que dibuja la [IA](../ia.md). El historial guarda **200 pasos** por defecto; se cambia en [Preferencias ▸ General](../preferencias.md#general) (0 = sin límite).

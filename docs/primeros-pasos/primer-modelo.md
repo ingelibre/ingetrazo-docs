@@ -33,7 +33,7 @@ Vamos a levantar una casita de 6 × 4 m con medidas exactas. Es el recorrido ese
 
 ## 6. Guarda
 
-`Ctrl+S` guarda el documento como **`.igz`**, el formato nativo y abierto de IngeTrazo. Si el modelo lleva texturas, viajan **dentro** del archivo: puedes llevarlo a otra PC y abre completo.
+`Ctrl+S` guarda el documento como **`.igz`**, el formato nativo y abierto de IngeTrazo. Si el modelo lleva texturas, viajan **dentro** del archivo: puedes llevarlo a otra PC y abre completo. El documento guarda también **la cámara** con la que lo dejaste: al abrirlo ves lo que veías (y **Archivo ▸ Nuevo** vuelve a la vista por defecto). Un `.igz` grande enseña una **barra de progreso** mientras carga; los últimos diez están en **Archivo ▸ Abrir recientes**.
 
 !!! note "Sólidos de verdad"
     IngeTrazo garantiza que las operaciones dejan sólidos **herméticos** (cerrados). Si una operación fuera a romper el volumen, el motor la rechaza en lugar de corromper el modelo — eso es lo que hace confiables el metrado BIM y la impresión 3D.

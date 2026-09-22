@@ -31,4 +31,4 @@ La interfaz usa tema oscuro siempre, pensado para que el viewport y los paneles 
 
 ## Idioma y preferencias
 
-Ventana ▸ Idioma cambia entre español e inglés (aplica al reiniciar). **Ventana ▸ Preferencias…** reúne el resto: auto-guardado, copia de seguridad, rueda del ratón, anti-aliasing, unidades sugeridas al importar y el Asistente IA — ver [Preferencias](../preferencias.md). El manual usa los nombres en español.
+Ventana ▸ Idioma cambia entre español, inglés y portugués de Brasil (aplica al reiniciar). **Ventana ▸ Preferencias…** reúne el resto: auto-guardado, copia de seguridad, rueda del ratón, anti-aliasing, pasos de deshacer, las **unidades del documento**, unidades sugeridas al importar y el Asistente IA — ver [Preferencias](../preferencias.md). El manual usa los nombres en español.

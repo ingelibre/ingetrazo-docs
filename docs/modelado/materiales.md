@@ -5,7 +5,8 @@
 **`B`** abre la herramienta Pintar y el panel de **Materiales** de la bandeja:
 
 - Elige un **color** o una **textura** y haz clic sobre caras (o sobre grupos enteros).
-- **Gotero**: con `Alt`, el clic *toma* el material de la cara bajo el cursor en lugar de pintarla.
+- **Pintar un grupo o componente desde fuera** pinta el objeto entero con la regla de SketchUp: el material propio de una cara va por delante del del contenedor, así que **solo las caras con el material por defecto** visten el del grupo (por las dos caras); al explotar, se lo quedan. Dos copias del mismo componente pueden ir de colores distintos, y el material del contenedor viaja en el `.igz` y en el `.skp`.
+- **Gotero**: manteniendo `Alt`, el clic *toma* el material de lo que hay bajo el cursor en lugar de pintarlo (sobre una cara por defecto de un grupo pintado, toma el del grupo) y lo deja como **material activo** en el panel.
 - **+ Color…** y **+ Textura…** crean materiales propios (con nombre opcional); puedes traer cualquier imagen PNG/JPG como textura.
 
 ### Lo que viene en el programa
