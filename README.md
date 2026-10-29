@@ -1,9 +1,11 @@
-# Manual de IngeTrazo (docs)
+# IngeTrazo Manual (docs)
 
-Sitio de documentación de usuario, hecho con [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
-Hermano de `ingepresupuestos-docs` (docs.ingepresupuestos.com): mismo stack y convenciones.
+[Español](README.es.md) · **English**
 
-## Desarrollo local
+User documentation site, built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/).
+Sibling of `ingepresupuestos-docs` (docs.ingepresupuestos.com): same stack and conventions.
+
+## Local development
 
 ```bash
 python3 -m venv venv
@@ -11,19 +13,39 @@ venv/bin/pip install -r requirements.txt
 venv/bin/mkdocs serve        # http://127.0.0.1:8000
 ```
 
-Editar el contenido en `docs/` (Markdown). La navegación se define en `mkdocs.yml`.
+Edit the content in `docs/es/` (Markdown, the original). Translations live
+in one folder per language with the same paths —Korean in `docs/ko/`,
+English in `docs/en/`—; a page missing there is shown in Spanish.
+Images, logo and CSS go in the root of `docs/` and are shared by all
+languages. Navigation is defined in `mkdocs.yml` (paths relative to the
+language folder; translated titles in each language's `nav_translations`).
 
-## Publicar (Cloudflare Pages, subida directa)
+### Keeping translations up to date
 
-El proyecto `ingetrazo-docs` de Cloudflare Pages **NO está conectado a
-GitHub**: un `git push` no construye nada (comprobado el 2026-09-07). Se
-construye aquí y se sube la carpeta `site/` con wrangler:
+Every translated page (`docs/ko/`, `docs/en/`) carries `source_blob:` in its front matter, the git blob
+of the original it was translated from. After changing the Spanish:
+
+```bash
+python3 scripts/check_translations.py          # which pages are outdated, untranslated or orphaned
+python3 scripts/check_translations.py --diff   # plus what changed in each original
+python3 scripts/check_translations.py --mark docs/ko/bim.md   # after updating the translation
+```
+
+It exits with code 1 if anything is pending (usable in CI). An outdated
+page keeps being published with its old translation until it is
+updated.
+
+## Publishing (Cloudflare Pages, direct upload)
+
+The `ingetrazo-docs` project on Cloudflare Pages is **NOT connected to
+GitHub**: a `git push` builds nothing (checked on 2026-09-07). It is
+built here and the `site/` folder is uploaded with wrangler:
 
 ```bash
 venv/bin/mkdocs build
 npx wrangler pages deploy site --project-name ingetrazo-docs --branch main
-git push   # el repo es solo el historial del fuente
+git push   # the repo is only the history of the source
 ```
 
-- **Output directory:** `site` (ignorada por git)
-- **URL:** https://ingetrazo-docs.pages.dev · **Dominio previsto:** docs.ingetrazo.com
+- **Output directory:** `site` (ignored by git)
+- **URL:** https://ingetrazo-docs.pages.dev · **Planned domain:** docs.ingetrazo.com
